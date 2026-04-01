@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C24F46BAD8F8B18ED6C100B8 /* Pods_Carmie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E956110249686661F2FCA741 /* Pods_Carmie.framework */; };
+		F51BA1C42F68E6B30003BD85 /* crx_stage_li@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1B42F68E6B30003BD85 /* crx_stage_li@2x.png */; };
+		F51BA1C52F68E6B30003BD85 /* crx_stage_bf@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1B52F68E6B30003BD85 /* crx_stage_bf@3x.png */; };
+		F51BA1C62F68E6B30003BD85 /* crx_stage_lc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1B62F68E6B30003BD85 /* crx_stage_lc@2x.png */; };
+		F51BA1C72F68E6B30003BD85 /* crx_stage_aig@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1B72F68E6B30003BD85 /* crx_stage_aig@3x.png */; };
+		F51BA1C82F68E6B30003BD85 /* crx_stage_jo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1B82F68E6B30003BD85 /* crx_stage_jo@3x.png */; };
+		F51BA1C92F68E6B30003BD85 /* crx_stage_ddd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1B92F68E6B30003BD85 /* crx_stage_ddd@2x.png */; };
+		F51BA1CA2F68E6B30003BD85 /* crx_stage_bf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1BA2F68E6B30003BD85 /* crx_stage_bf@2x.png */; };
+		F51BA1CB2F68E6B30003BD85 /* crx_stage_em@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1BB2F68E6B30003BD85 /* crx_stage_em@2x.png */; };
+		F51BA1CC2F68E6B30003BD85 /* crx_stage_ddd@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1BC2F68E6B30003BD85 /* crx_stage_ddd@3x.png */; };
+		F51BA1CD2F68E6B30003BD85 /* crx_stage_jo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1BD2F68E6B30003BD85 /* crx_stage_jo@2x.png */; };
+		F51BA1CE2F68E6B30003BD85 /* crx_stage_carmie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1BE2F68E6B30003BD85 /* crx_stage_carmie@2x.png */; };
+		F51BA1CF2F68E6B30003BD85 /* crx_stage_carmie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1BF2F68E6B30003BD85 /* crx_stage_carmie@3x.png */; };
+		F51BA1D02F68E6B30003BD85 /* crx_stage_lc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1C02F68E6B30003BD85 /* crx_stage_lc@3x.png */; };
+		F51BA1D12F68E6B30003BD85 /* crx_stage_li@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1C12F68E6B30003BD85 /* crx_stage_li@3x.png */; };
+		F51BA1D22F68E6B30003BD85 /* crx_stage_aig@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1C22F68E6B30003BD85 /* crx_stage_aig@2x.png */; };
+		F51BA1D32F68E6B40003BD85 /* crx_stage_em@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1C32F68E6B30003BD85 /* crx_stage_em@3x.png */; };
+		F51BA1D62F68F23A0003BD85 /* CRXStageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F51BA1D52F68F23A0003BD85 /* CRXStageView.m */; };
+		F51BA1D92F68F2440003BD85 /* CRXStageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F51BA1D82F68F2440003BD85 /* CRXStageCell.m */; };
+		F51BA1E42F68F7690003BD85 /* crx_harbor_sep@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1DA2F68F7680003BD85 /* crx_harbor_sep@3x.png */; };
+		F51BA1E52F68F7690003BD85 /* crx_harbor_pat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1DB2F68F7680003BD85 /* crx_harbor_pat@2x.png */; };
+		F51BA1E62F68F7690003BD85 /* crx_harbor_zhs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1DC2F68F7680003BD85 /* crx_harbor_zhs@3x.png */; };
+		F51BA1E72F68F7690003BD85 /* crx_harbor_edt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1DD2F68F7680003BD85 /* crx_harbor_edt@3x.png */; };
+		F51BA1E82F68F7690003BD85 /* crx_harbor_pat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1DE2F68F7680003BD85 /* crx_harbor_pat@3x.png */; };
+		F51BA1E92F68F7690003BD85 /* crx_harbor_edt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1DF2F68F7680003BD85 /* crx_harbor_edt@2x.png */; };
+		F51BA1EA2F68F7690003BD85 /* crx_harbor_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1E02F68F7680003BD85 /* crx_harbor_logo@3x.png */; };
+		F51BA1EB2F68F7690003BD85 /* crx_harbor_sep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1E12F68F7690003BD85 /* crx_harbor_sep@2x.png */; };
+		F51BA1EC2F68F7690003BD85 /* crx_harbor_zhs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1E22F68F7690003BD85 /* crx_harbor_zhs@2x.png */; };
+		F51BA1ED2F68F7690003BD85 /* crx_harbor_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1E32F68F7690003BD85 /* crx_harbor_logo@2x.png */; };
+		F51BA1F02F6937BD0003BD85 /* crx_harbor_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1EE2F6937BD0003BD85 /* crx_harbor_back@3x.png */; };
+		F51BA1F12F6937BD0003BD85 /* crx_harbor_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1EF2F6937BD0003BD85 /* crx_harbor_back@2x.png */; };
+		F51BA1F82F6938B10003BD85 /* crx_entry_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1F22F6938B00003BD85 /* crx_entry_nor@2x.png */; };
+		F51BA1F92F6938B10003BD85 /* crx_entry_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1F32F6938B00003BD85 /* crx_entry_btn@2x.png */; };
+		F51BA1FA2F6938B10003BD85 /* crx_entry_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1F42F6938B10003BD85 /* crx_entry_sel@2x.png */; };
+		F51BA1FB2F6938B10003BD85 /* crx_entry_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1F52F6938B10003BD85 /* crx_entry_btn@3x.png */; };
+		F51BA1FC2F6938B10003BD85 /* crx_entry_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1F62F6938B10003BD85 /* crx_entry_nor@3x.png */; };
+		F51BA1FD2F6938B10003BD85 /* crx_entry_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1F72F6938B10003BD85 /* crx_entry_sel@3x.png */; };
+		F5EBCB172F67F4F800AD1A42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB162F67F4F800AD1A42 /* AppDelegate.m */; };
+		F5EBCB1A2F67F4F800AD1A42 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB192F67F4F800AD1A42 /* SceneDelegate.m */; };
+		F5EBCB222F67F4FC00AD1A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB212F67F4FC00AD1A42 /* Assets.xcassets */; };
+		F5EBCB252F67F4FC00AD1A42 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB242F67F4FC00AD1A42 /* Base */; };
+		F5EBCB282F67F4FC00AD1A42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB272F67F4FC00AD1A42 /* main.m */; };
+		F5EBCB332F67F57B00AD1A42 /* CRXAppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB322F67F57B00AD1A42 /* CRXAppCoordinator.m */; };
+		F5EBCB362F67F58300AD1A42 /* CRXRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB352F67F58300AD1A42 /* CRXRouteManager.m */; };
+		F5EBCB392F67F59400AD1A42 /* CRXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB382F67F59400AD1A42 /* CRXTabBarController.m */; };
+		F5EBCB3C2F67F5A600AD1A42 /* CRXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB3B2F67F5A600AD1A42 /* CRXTabBar.m */; };
+		F5EBCB3F2F67F5BB00AD1A42 /* CRXController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB3E2F67F5BB00AD1A42 /* CRXController.m */; };
+		F5EBCB422F67F5D200AD1A42 /* CMRPrivacyController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB412F67F5D200AD1A42 /* CMRPrivacyController.m */; };
+		F5EBCB452F67F5DD00AD1A42 /* CMRAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB442F67F5DD00AD1A42 /* CMRAgreementController.m */; };
+		F5EBCB502F67F69800AD1A42 /* CRXStageController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB4F2F67F69800AD1A42 /* CRXStageController.m */; };
+		F5EBCB532F67F6B200AD1A42 /* CRXFlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB522F67F6B200AD1A42 /* CRXFlowController.m */; };
+		F5EBCB562F67F6D800AD1A42 /* CRXStudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB552F67F6D800AD1A42 /* CRXStudioController.m */; };
+		F5EBCB592F67F6E500AD1A42 /* CRXBlueprintController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB582F67F6E500AD1A42 /* CRXBlueprintController.m */; };
+		F5EBCB5C2F67F70800AD1A42 /* CRXLoopBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB5B2F67F70800AD1A42 /* CRXLoopBoardController.m */; };
+		F5EBCB5F2F67F71400AD1A42 /* CRXLoopDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB5E2F67F71400AD1A42 /* CRXLoopDetailController.m */; };
+		F5EBCB622F67F72A00AD1A42 /* CRXForgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB612F67F72A00AD1A42 /* CRXForgeController.m */; };
+		F5EBCB652F67F73D00AD1A42 /* CRXSignalBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB642F67F73D00AD1A42 /* CRXSignalBoardController.m */; };
+		F5EBCB682F67F74800AD1A42 /* CRXChannelController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB672F67F74800AD1A42 /* CRXChannelController.m */; };
+		F5EBCB6B2F67F75600AD1A42 /* CRXPersonaController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB6A2F67F75600AD1A42 /* CRXPersonaController.m */; };
+		F5EBCB6E2F67F77100AD1A42 /* CRXHarborController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB6D2F67F77100AD1A42 /* CRXHarborController.m */; };
+		F5EBCB712F67F77E00AD1A42 /* CRXControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB702F67F77E00AD1A42 /* CRXControlController.m */; };
+		F5EBCB742F67F78800AD1A42 /* CRXIdentityEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB732F67F78800AD1A42 /* CRXIdentityEditorController.m */; };
+		F5EBCB772F67F79800AD1A42 /* CRXAccessCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB762F67F79800AD1A42 /* CRXAccessCenterController.m */; };
+		F5EBCB7E2F67F7C500AD1A42 /* CRXEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB7D2F67F7C500AD1A42 /* CRXEntryController.m */; };
+		F5EBCB812F67F83500AD1A42 /* CRXNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBCB802F67F83500AD1A42 /* CRXNavController.m */; };
+		F5EBCB952F68009700AD1A42 /* tab_harbor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB832F68009600AD1A42 /* tab_harbor@2x.png */; };
+		F5EBCB962F68009700AD1A42 /* tab_stage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB842F68009600AD1A42 /* tab_stage@2x.png */; };
+		F5EBCB982F68009700AD1A42 /* tab_loop_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB862F68009600AD1A42 /* tab_loop_sel@2x.png */; };
+		F5EBCB9A2F68009700AD1A42 /* tab_harbor_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB882F68009600AD1A42 /* tab_harbor_sel@2x.png */; };
+		F5EBCB9B2F68009700AD1A42 /* tab_loop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB892F68009600AD1A42 /* tab_loop@3x.png */; };
+		F5EBCB9C2F68009700AD1A42 /* tab_harbor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB8A2F68009600AD1A42 /* tab_harbor@3x.png */; };
+		F5EBCB9D2F68009700AD1A42 /* tab_signal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB8B2F68009600AD1A42 /* tab_signal@2x.png */; };
+		F5EBCB9E2F68009700AD1A42 /* tab_stage_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB8C2F68009700AD1A42 /* tab_stage_sel@2x.png */; };
+		F5EBCB9F2F68009700AD1A42 /* tab_loop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB8D2F68009700AD1A42 /* tab_loop@2x.png */; };
+		F5EBCBA02F68009700AD1A42 /* tab_signal_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB8E2F68009700AD1A42 /* tab_signal_sel@2x.png */; };
+		F5EBCBA12F68009700AD1A42 /* tab_loop_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB8F2F68009700AD1A42 /* tab_loop_sel@3x.png */; };
+		F5EBCBA22F68009700AD1A42 /* tab_signal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB902F68009700AD1A42 /* tab_signal@3x.png */; };
+		F5EBCBA32F68009700AD1A42 /* tab_harbor_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB912F68009700AD1A42 /* tab_harbor_sel@3x.png */; };
+		F5EBCBA42F68009700AD1A42 /* tab_stage_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB922F68009700AD1A42 /* tab_stage_sel@3x.png */; };
+		F5EBCBA52F68009700AD1A42 /* tab_stage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB932F68009700AD1A42 /* tab_stage@3x.png */; };
+		F5EBCBA62F68009700AD1A42 /* tab_signal_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCB942F68009700AD1A42 /* tab_signal_sel@3x.png */; };
+		F5EBCBA92F6800BB00AD1A42 /* tab_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCBA72F6800BB00AD1A42 /* tab_btn@3x.png */; };
+		F5EBCBAA2F6800BB00AD1A42 /* tab_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCBA82F6800BB00AD1A42 /* tab_btn@2x.png */; };
+		F5EBCBAD2F6805BB00AD1A42 /* crx_bg_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCBAB2F6805BB00AD1A42 /* crx_bg_icon@2x.png */; };
+		F5EBCBAE2F6805BB00AD1A42 /* crx_bg_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EBCBAC2F6805BB00AD1A42 /* crx_bg_icon@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		139126CF8BCEBDC72CAD9EFF /* Pods-Carmie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carmie.release.xcconfig"; path = "Target Support Files/Pods-Carmie/Pods-Carmie.release.xcconfig"; sourceTree = "<group>"; };
+		3928198A0808DE21757F7B98 /* Pods-Carmie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carmie.debug.xcconfig"; path = "Target Support Files/Pods-Carmie/Pods-Carmie.debug.xcconfig"; sourceTree = "<group>"; };
+		E956110249686661F2FCA741 /* Pods_Carmie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carmie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51BA1B42F68E6B30003BD85 /* crx_stage_li@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_li@2x.png"; sourceTree = "<group>"; };
+		F51BA1B52F68E6B30003BD85 /* crx_stage_bf@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_bf@3x.png"; sourceTree = "<group>"; };
+		F51BA1B62F68E6B30003BD85 /* crx_stage_lc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_lc@2x.png"; sourceTree = "<group>"; };
+		F51BA1B72F68E6B30003BD85 /* crx_stage_aig@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_aig@3x.png"; sourceTree = "<group>"; };
+		F51BA1B82F68E6B30003BD85 /* crx_stage_jo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_jo@3x.png"; sourceTree = "<group>"; };
+		F51BA1B92F68E6B30003BD85 /* crx_stage_ddd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_ddd@2x.png"; sourceTree = "<group>"; };
+		F51BA1BA2F68E6B30003BD85 /* crx_stage_bf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_bf@2x.png"; sourceTree = "<group>"; };
+		F51BA1BB2F68E6B30003BD85 /* crx_stage_em@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_em@2x.png"; sourceTree = "<group>"; };
+		F51BA1BC2F68E6B30003BD85 /* crx_stage_ddd@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_ddd@3x.png"; sourceTree = "<group>"; };
+		F51BA1BD2F68E6B30003BD85 /* crx_stage_jo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_jo@2x.png"; sourceTree = "<group>"; };
+		F51BA1BE2F68E6B30003BD85 /* crx_stage_carmie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_carmie@2x.png"; sourceTree = "<group>"; };
+		F51BA1BF2F68E6B30003BD85 /* crx_stage_carmie@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_carmie@3x.png"; sourceTree = "<group>"; };
+		F51BA1C02F68E6B30003BD85 /* crx_stage_lc@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_lc@3x.png"; sourceTree = "<group>"; };
+		F51BA1C12F68E6B30003BD85 /* crx_stage_li@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_li@3x.png"; sourceTree = "<group>"; };
+		F51BA1C22F68E6B30003BD85 /* crx_stage_aig@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_aig@2x.png"; sourceTree = "<group>"; };
+		F51BA1C32F68E6B30003BD85 /* crx_stage_em@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_em@3x.png"; sourceTree = "<group>"; };
+		F51BA1D42F68F23A0003BD85 /* CRXStageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXStageView.h; sourceTree = "<group>"; };
+		F51BA1D52F68F23A0003BD85 /* CRXStageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXStageView.m; sourceTree = "<group>"; };
+		F51BA1D72F68F2440003BD85 /* CRXStageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXStageCell.h; sourceTree = "<group>"; };
+		F51BA1D82F68F2440003BD85 /* CRXStageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXStageCell.m; sourceTree = "<group>"; };
+		F51BA1DA2F68F7680003BD85 /* crx_harbor_sep@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_sep@3x.png"; sourceTree = "<group>"; };
+		F51BA1DB2F68F7680003BD85 /* crx_harbor_pat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_pat@2x.png"; sourceTree = "<group>"; };
+		F51BA1DC2F68F7680003BD85 /* crx_harbor_zhs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_zhs@3x.png"; sourceTree = "<group>"; };
+		F51BA1DD2F68F7680003BD85 /* crx_harbor_edt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_edt@3x.png"; sourceTree = "<group>"; };
+		F51BA1DE2F68F7680003BD85 /* crx_harbor_pat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_pat@3x.png"; sourceTree = "<group>"; };
+		F51BA1DF2F68F7680003BD85 /* crx_harbor_edt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_edt@2x.png"; sourceTree = "<group>"; };
+		F51BA1E02F68F7680003BD85 /* crx_harbor_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_logo@3x.png"; sourceTree = "<group>"; };
+		F51BA1E12F68F7690003BD85 /* crx_harbor_sep@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_sep@2x.png"; sourceTree = "<group>"; };
+		F51BA1E22F68F7690003BD85 /* crx_harbor_zhs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_zhs@2x.png"; sourceTree = "<group>"; };
+		F51BA1E32F68F7690003BD85 /* crx_harbor_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_logo@2x.png"; sourceTree = "<group>"; };
+		F51BA1EE2F6937BD0003BD85 /* crx_harbor_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_back@3x.png"; sourceTree = "<group>"; };
+		F51BA1EF2F6937BD0003BD85 /* crx_harbor_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_harbor_back@2x.png"; sourceTree = "<group>"; };
+		F51BA1F22F6938B00003BD85 /* crx_entry_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_entry_nor@2x.png"; sourceTree = "<group>"; };
+		F51BA1F32F6938B00003BD85 /* crx_entry_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_entry_btn@2x.png"; sourceTree = "<group>"; };
+		F51BA1F42F6938B10003BD85 /* crx_entry_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_entry_sel@2x.png"; sourceTree = "<group>"; };
+		F51BA1F52F6938B10003BD85 /* crx_entry_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_entry_btn@3x.png"; sourceTree = "<group>"; };
+		F51BA1F62F6938B10003BD85 /* crx_entry_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_entry_nor@3x.png"; sourceTree = "<group>"; };
+		F51BA1F72F6938B10003BD85 /* crx_entry_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_entry_sel@3x.png"; sourceTree = "<group>"; };
+		F5EBCB122F67F4F800AD1A42 /* Carmie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carmie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EBCB152F67F4F800AD1A42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5EBCB162F67F4F800AD1A42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5EBCB182F67F4F800AD1A42 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F5EBCB192F67F4F800AD1A42 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F5EBCB212F67F4FC00AD1A42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5EBCB242F67F4FC00AD1A42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5EBCB262F67F4FC00AD1A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EBCB272F67F4FC00AD1A42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5EBCB312F67F57B00AD1A42 /* CRXAppCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXAppCoordinator.h; sourceTree = "<group>"; };
+		F5EBCB322F67F57B00AD1A42 /* CRXAppCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXAppCoordinator.m; sourceTree = "<group>"; };
+		F5EBCB342F67F58300AD1A42 /* CRXRouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXRouteManager.h; sourceTree = "<group>"; };
+		F5EBCB352F67F58300AD1A42 /* CRXRouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXRouteManager.m; sourceTree = "<group>"; };
+		F5EBCB372F67F59400AD1A42 /* CRXTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXTabBarController.h; sourceTree = "<group>"; };
+		F5EBCB382F67F59400AD1A42 /* CRXTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXTabBarController.m; sourceTree = "<group>"; };
+		F5EBCB3A2F67F5A600AD1A42 /* CRXTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXTabBar.h; sourceTree = "<group>"; };
+		F5EBCB3B2F67F5A600AD1A42 /* CRXTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXTabBar.m; sourceTree = "<group>"; };
+		F5EBCB3D2F67F5BB00AD1A42 /* CRXController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXController.h; sourceTree = "<group>"; };
+		F5EBCB3E2F67F5BB00AD1A42 /* CRXController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXController.m; sourceTree = "<group>"; };
+		F5EBCB402F67F5D200AD1A42 /* CMRPrivacyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMRPrivacyController.h; sourceTree = "<group>"; };
+		F5EBCB412F67F5D200AD1A42 /* CMRPrivacyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMRPrivacyController.m; sourceTree = "<group>"; };
+		F5EBCB432F67F5DD00AD1A42 /* CMRAgreementController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMRAgreementController.h; sourceTree = "<group>"; };
+		F5EBCB442F67F5DD00AD1A42 /* CMRAgreementController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMRAgreementController.m; sourceTree = "<group>"; };
+		F5EBCB4E2F67F69800AD1A42 /* CRXStageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXStageController.h; sourceTree = "<group>"; };
+		F5EBCB4F2F67F69800AD1A42 /* CRXStageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXStageController.m; sourceTree = "<group>"; };
+		F5EBCB512F67F6B200AD1A42 /* CRXFlowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXFlowController.h; sourceTree = "<group>"; };
+		F5EBCB522F67F6B200AD1A42 /* CRXFlowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXFlowController.m; sourceTree = "<group>"; };
+		F5EBCB542F67F6D800AD1A42 /* CRXStudioController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXStudioController.h; sourceTree = "<group>"; };
+		F5EBCB552F67F6D800AD1A42 /* CRXStudioController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXStudioController.m; sourceTree = "<group>"; };
+		F5EBCB572F67F6E500AD1A42 /* CRXBlueprintController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXBlueprintController.h; sourceTree = "<group>"; };
+		F5EBCB582F67F6E500AD1A42 /* CRXBlueprintController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXBlueprintController.m; sourceTree = "<group>"; };
+		F5EBCB5A2F67F70800AD1A42 /* CRXLoopBoardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXLoopBoardController.h; sourceTree = "<group>"; };
+		F5EBCB5B2F67F70800AD1A42 /* CRXLoopBoardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXLoopBoardController.m; sourceTree = "<group>"; };
+		F5EBCB5D2F67F71400AD1A42 /* CRXLoopDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXLoopDetailController.h; sourceTree = "<group>"; };
+		F5EBCB5E2F67F71400AD1A42 /* CRXLoopDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXLoopDetailController.m; sourceTree = "<group>"; };
+		F5EBCB602F67F72A00AD1A42 /* CRXForgeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXForgeController.h; sourceTree = "<group>"; };
+		F5EBCB612F67F72A00AD1A42 /* CRXForgeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXForgeController.m; sourceTree = "<group>"; };
+		F5EBCB632F67F73D00AD1A42 /* CRXSignalBoardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXSignalBoardController.h; sourceTree = "<group>"; };
+		F5EBCB642F67F73D00AD1A42 /* CRXSignalBoardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXSignalBoardController.m; sourceTree = "<group>"; };
+		F5EBCB662F67F74800AD1A42 /* CRXChannelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXChannelController.h; sourceTree = "<group>"; };
+		F5EBCB672F67F74800AD1A42 /* CRXChannelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXChannelController.m; sourceTree = "<group>"; };
+		F5EBCB692F67F75600AD1A42 /* CRXPersonaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXPersonaController.h; sourceTree = "<group>"; };
+		F5EBCB6A2F67F75600AD1A42 /* CRXPersonaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXPersonaController.m; sourceTree = "<group>"; };
+		F5EBCB6C2F67F77100AD1A42 /* CRXHarborController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXHarborController.h; sourceTree = "<group>"; };
+		F5EBCB6D2F67F77100AD1A42 /* CRXHarborController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXHarborController.m; sourceTree = "<group>"; };
+		F5EBCB6F2F67F77E00AD1A42 /* CRXControlController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXControlController.h; sourceTree = "<group>"; };
+		F5EBCB702F67F77E00AD1A42 /* CRXControlController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXControlController.m; sourceTree = "<group>"; };
+		F5EBCB722F67F78800AD1A42 /* CRXIdentityEditorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXIdentityEditorController.h; sourceTree = "<group>"; };
+		F5EBCB732F67F78800AD1A42 /* CRXIdentityEditorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXIdentityEditorController.m; sourceTree = "<group>"; };
+		F5EBCB752F67F79800AD1A42 /* CRXAccessCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXAccessCenterController.h; sourceTree = "<group>"; };
+		F5EBCB762F67F79800AD1A42 /* CRXAccessCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXAccessCenterController.m; sourceTree = "<group>"; };
+		F5EBCB7C2F67F7C500AD1A42 /* CRXEntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXEntryController.h; sourceTree = "<group>"; };
+		F5EBCB7D2F67F7C500AD1A42 /* CRXEntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXEntryController.m; sourceTree = "<group>"; };
+		F5EBCB7F2F67F83500AD1A42 /* CRXNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXNavController.h; sourceTree = "<group>"; };
+		F5EBCB802F67F83500AD1A42 /* CRXNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXNavController.m; sourceTree = "<group>"; };
+		F5EBCB832F68009600AD1A42 /* tab_harbor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_harbor@2x.png"; sourceTree = "<group>"; };
+		F5EBCB842F68009600AD1A42 /* tab_stage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_stage@2x.png"; sourceTree = "<group>"; };
+		F5EBCB862F68009600AD1A42 /* tab_loop_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_loop_sel@2x.png"; sourceTree = "<group>"; };
+		F5EBCB882F68009600AD1A42 /* tab_harbor_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_harbor_sel@2x.png"; sourceTree = "<group>"; };
+		F5EBCB892F68009600AD1A42 /* tab_loop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_loop@3x.png"; sourceTree = "<group>"; };
+		F5EBCB8A2F68009600AD1A42 /* tab_harbor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_harbor@3x.png"; sourceTree = "<group>"; };
+		F5EBCB8B2F68009600AD1A42 /* tab_signal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_signal@2x.png"; sourceTree = "<group>"; };
+		F5EBCB8C2F68009700AD1A42 /* tab_stage_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_stage_sel@2x.png"; sourceTree = "<group>"; };
+		F5EBCB8D2F68009700AD1A42 /* tab_loop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_loop@2x.png"; sourceTree = "<group>"; };
+		F5EBCB8E2F68009700AD1A42 /* tab_signal_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_signal_sel@2x.png"; sourceTree = "<group>"; };
+		F5EBCB8F2F68009700AD1A42 /* tab_loop_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_loop_sel@3x.png"; sourceTree = "<group>"; };
+		F5EBCB902F68009700AD1A42 /* tab_signal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_signal@3x.png"; sourceTree = "<group>"; };
+		F5EBCB912F68009700AD1A42 /* tab_harbor_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_harbor_sel@3x.png"; sourceTree = "<group>"; };
+		F5EBCB922F68009700AD1A42 /* tab_stage_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_stage_sel@3x.png"; sourceTree = "<group>"; };
+		F5EBCB932F68009700AD1A42 /* tab_stage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_stage@3x.png"; sourceTree = "<group>"; };
+		F5EBCB942F68009700AD1A42 /* tab_signal_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_signal_sel@3x.png"; sourceTree = "<group>"; };
+		F5EBCBA72F6800BB00AD1A42 /* tab_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_btn@3x.png"; sourceTree = "<group>"; };
+		F5EBCBA82F6800BB00AD1A42 /* tab_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_btn@2x.png"; sourceTree = "<group>"; };
+		F5EBCBAB2F6805BB00AD1A42 /* crx_bg_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_bg_icon@2x.png"; sourceTree = "<group>"; };
+		F5EBCBAC2F6805BB00AD1A42 /* crx_bg_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_bg_icon@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5EBCB0F2F67F4F800AD1A42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24F46BAD8F8B18ED6C100B8 /* Pods_Carmie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EB2E193BC45828179803215 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E956110249686661F2FCA741 /* Pods_Carmie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10607B64E09074B4B897BF67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3928198A0808DE21757F7B98 /* Pods-Carmie.debug.xcconfig */,
+				139126CF8BCEBDC72CAD9EFF /* Pods-Carmie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5EBCB092F67F4F800AD1A42 = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB142F67F4F800AD1A42 /* Carmie */,
+				F5EBCB132F67F4F800AD1A42 /* Products */,
+				10607B64E09074B4B897BF67 /* Pods */,
+				0EB2E193BC45828179803215 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5EBCB132F67F4F800AD1A42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB122F67F4F800AD1A42 /* Carmie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5EBCB142F67F4F800AD1A42 /* Carmie */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB822F67FBAC00AD1A42 /* CoreImage */,
+				F5EBCB302F67F56B00AD1A42 /* Core */,
+				F5EBCB2F2F67F55C00AD1A42 /* Modules */,
+				F5EBCB2E2F67F54C00AD1A42 /* Legal */,
+				F5EBCB152F67F4F800AD1A42 /* AppDelegate.h */,
+				F5EBCB162F67F4F800AD1A42 /* AppDelegate.m */,
+				F5EBCB182F67F4F800AD1A42 /* SceneDelegate.h */,
+				F5EBCB192F67F4F800AD1A42 /* SceneDelegate.m */,
+				F5EBCB212F67F4FC00AD1A42 /* Assets.xcassets */,
+				F5EBCB232F67F4FC00AD1A42 /* LaunchScreen.storyboard */,
+				F5EBCB262F67F4FC00AD1A42 /* Info.plist */,
+				F5EBCB272F67F4FC00AD1A42 /* main.m */,
+			);
+			path = Carmie;
+			sourceTree = "<group>";
+		};
+		F5EBCB2E2F67F54C00AD1A42 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB402F67F5D200AD1A42 /* CMRPrivacyController.h */,
+				F5EBCB412F67F5D200AD1A42 /* CMRPrivacyController.m */,
+				F5EBCB432F67F5DD00AD1A42 /* CMRAgreementController.h */,
+				F5EBCB442F67F5DD00AD1A42 /* CMRAgreementController.m */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		F5EBCB2F2F67F55C00AD1A42 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB4D2F67F62700AD1A42 /* Stage */,
+				F5EBCB4B2F67F61600AD1A42 /* Loop */,
+				F5EBCB4A2F67F60D00AD1A42 /* Forge */,
+				F5EBCB492F67F60500AD1A42 /* Signal */,
+				F5EBCB482F67F5FD00AD1A42 /* Harbor */,
+				F5EBCB782F67F7A500AD1A42 /* Entry */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F5EBCB302F67F56B00AD1A42 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB312F67F57B00AD1A42 /* CRXAppCoordinator.h */,
+				F5EBCB322F67F57B00AD1A42 /* CRXAppCoordinator.m */,
+				F5EBCB342F67F58300AD1A42 /* CRXRouteManager.h */,
+				F5EBCB352F67F58300AD1A42 /* CRXRouteManager.m */,
+				F5EBCB7F2F67F83500AD1A42 /* CRXNavController.h */,
+				F5EBCB802F67F83500AD1A42 /* CRXNavController.m */,
+				F5EBCB372F67F59400AD1A42 /* CRXTabBarController.h */,
+				F5EBCB382F67F59400AD1A42 /* CRXTabBarController.m */,
+				F5EBCB3A2F67F5A600AD1A42 /* CRXTabBar.h */,
+				F5EBCB3B2F67F5A600AD1A42 /* CRXTabBar.m */,
+				F5EBCB3D2F67F5BB00AD1A42 /* CRXController.h */,
+				F5EBCB3E2F67F5BB00AD1A42 /* CRXController.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F5EBCB482F67F5FD00AD1A42 /* Harbor */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB6C2F67F77100AD1A42 /* CRXHarborController.h */,
+				F5EBCB6D2F67F77100AD1A42 /* CRXHarborController.m */,
+				F5EBCB6F2F67F77E00AD1A42 /* CRXControlController.h */,
+				F5EBCB702F67F77E00AD1A42 /* CRXControlController.m */,
+				F5EBCB722F67F78800AD1A42 /* CRXIdentityEditorController.h */,
+				F5EBCB732F67F78800AD1A42 /* CRXIdentityEditorController.m */,
+				F5EBCB752F67F79800AD1A42 /* CRXAccessCenterController.h */,
+				F5EBCB762F67F79800AD1A42 /* CRXAccessCenterController.m */,
+			);
+			path = Harbor;
+			sourceTree = "<group>";
+		};
+		F5EBCB492F67F60500AD1A42 /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB632F67F73D00AD1A42 /* CRXSignalBoardController.h */,
+				F5EBCB642F67F73D00AD1A42 /* CRXSignalBoardController.m */,
+				F5EBCB662F67F74800AD1A42 /* CRXChannelController.h */,
+				F5EBCB672F67F74800AD1A42 /* CRXChannelController.m */,
+				F5EBCB692F67F75600AD1A42 /* CRXPersonaController.h */,
+				F5EBCB6A2F67F75600AD1A42 /* CRXPersonaController.m */,
+			);
+			path = Signal;
+			sourceTree = "<group>";
+		};
+		F5EBCB4A2F67F60D00AD1A42 /* Forge */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB602F67F72A00AD1A42 /* CRXForgeController.h */,
+				F5EBCB612F67F72A00AD1A42 /* CRXForgeController.m */,
+			);
+			path = Forge;
+			sourceTree = "<group>";
+		};
+		F5EBCB4B2F67F61600AD1A42 /* Loop */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB5A2F67F70800AD1A42 /* CRXLoopBoardController.h */,
+				F5EBCB5B2F67F70800AD1A42 /* CRXLoopBoardController.m */,
+				F5EBCB5D2F67F71400AD1A42 /* CRXLoopDetailController.h */,
+				F5EBCB5E2F67F71400AD1A42 /* CRXLoopDetailController.m */,
+			);
+			path = Loop;
+			sourceTree = "<group>";
+		};
+		F5EBCB4D2F67F62700AD1A42 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB4E2F67F69800AD1A42 /* CRXStageController.h */,
+				F5EBCB4F2F67F69800AD1A42 /* CRXStageController.m */,
+				F5EBCB512F67F6B200AD1A42 /* CRXFlowController.h */,
+				F5EBCB522F67F6B200AD1A42 /* CRXFlowController.m */,
+				F5EBCB542F67F6D800AD1A42 /* CRXStudioController.h */,
+				F5EBCB552F67F6D800AD1A42 /* CRXStudioController.m */,
+				F5EBCB572F67F6E500AD1A42 /* CRXBlueprintController.h */,
+				F5EBCB582F67F6E500AD1A42 /* CRXBlueprintController.m */,
+				F51BA1D42F68F23A0003BD85 /* CRXStageView.h */,
+				F51BA1D52F68F23A0003BD85 /* CRXStageView.m */,
+				F51BA1D72F68F2440003BD85 /* CRXStageCell.h */,
+				F51BA1D82F68F2440003BD85 /* CRXStageCell.m */,
+			);
+			path = Stage;
+			sourceTree = "<group>";
+		};
+		F5EBCB782F67F7A500AD1A42 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB7C2F67F7C500AD1A42 /* CRXEntryController.h */,
+				F5EBCB7D2F67F7C500AD1A42 /* CRXEntryController.m */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		F5EBCB822F67FBAC00AD1A42 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBCB882F68009600AD1A42 /* tab_harbor_sel@2x.png */,
+				F5EBCB912F68009700AD1A42 /* tab_harbor_sel@3x.png */,
+				F5EBCB832F68009600AD1A42 /* tab_harbor@2x.png */,
+				F5EBCB8A2F68009600AD1A42 /* tab_harbor@3x.png */,
+				F5EBCB862F68009600AD1A42 /* tab_loop_sel@2x.png */,
+				F5EBCB8F2F68009700AD1A42 /* tab_loop_sel@3x.png */,
+				F5EBCB8D2F68009700AD1A42 /* tab_loop@2x.png */,
+				F5EBCB892F68009600AD1A42 /* tab_loop@3x.png */,
+				F5EBCB8E2F68009700AD1A42 /* tab_signal_sel@2x.png */,
+				F5EBCB942F68009700AD1A42 /* tab_signal_sel@3x.png */,
+				F5EBCB8B2F68009600AD1A42 /* tab_signal@2x.png */,
+				F5EBCB902F68009700AD1A42 /* tab_signal@3x.png */,
+				F5EBCB8C2F68009700AD1A42 /* tab_stage_sel@2x.png */,
+				F5EBCB922F68009700AD1A42 /* tab_stage_sel@3x.png */,
+				F5EBCB842F68009600AD1A42 /* tab_stage@2x.png */,
+				F5EBCB932F68009700AD1A42 /* tab_stage@3x.png */,
+				F5EBCBA82F6800BB00AD1A42 /* tab_btn@2x.png */,
+				F5EBCBA72F6800BB00AD1A42 /* tab_btn@3x.png */,
+				F5EBCBAB2F6805BB00AD1A42 /* crx_bg_icon@2x.png */,
+				F5EBCBAC2F6805BB00AD1A42 /* crx_bg_icon@3x.png */,
+				F51BA1C22F68E6B30003BD85 /* crx_stage_aig@2x.png */,
+				F51BA1B72F68E6B30003BD85 /* crx_stage_aig@3x.png */,
+				F51BA1BA2F68E6B30003BD85 /* crx_stage_bf@2x.png */,
+				F51BA1B52F68E6B30003BD85 /* crx_stage_bf@3x.png */,
+				F51BA1BE2F68E6B30003BD85 /* crx_stage_carmie@2x.png */,
+				F51BA1BF2F68E6B30003BD85 /* crx_stage_carmie@3x.png */,
+				F51BA1B92F68E6B30003BD85 /* crx_stage_ddd@2x.png */,
+				F51BA1BC2F68E6B30003BD85 /* crx_stage_ddd@3x.png */,
+				F51BA1BB2F68E6B30003BD85 /* crx_stage_em@2x.png */,
+				F51BA1C32F68E6B30003BD85 /* crx_stage_em@3x.png */,
+				F51BA1BD2F68E6B30003BD85 /* crx_stage_jo@2x.png */,
+				F51BA1B82F68E6B30003BD85 /* crx_stage_jo@3x.png */,
+				F51BA1B62F68E6B30003BD85 /* crx_stage_lc@2x.png */,
+				F51BA1C02F68E6B30003BD85 /* crx_stage_lc@3x.png */,
+				F51BA1B42F68E6B30003BD85 /* crx_stage_li@2x.png */,
+				F51BA1C12F68E6B30003BD85 /* crx_stage_li@3x.png */,
+				F51BA1DF2F68F7680003BD85 /* crx_harbor_edt@2x.png */,
+				F51BA1DD2F68F7680003BD85 /* crx_harbor_edt@3x.png */,
+				F51BA1E32F68F7690003BD85 /* crx_harbor_logo@2x.png */,
+				F51BA1E02F68F7680003BD85 /* crx_harbor_logo@3x.png */,
+				F51BA1DB2F68F7680003BD85 /* crx_harbor_pat@2x.png */,
+				F51BA1DE2F68F7680003BD85 /* crx_harbor_pat@3x.png */,
+				F51BA1E12F68F7690003BD85 /* crx_harbor_sep@2x.png */,
+				F51BA1DA2F68F7680003BD85 /* crx_harbor_sep@3x.png */,
+				F51BA1E22F68F7690003BD85 /* crx_harbor_zhs@2x.png */,
+				F51BA1DC2F68F7680003BD85 /* crx_harbor_zhs@3x.png */,
+				F51BA1EF2F6937BD0003BD85 /* crx_harbor_back@2x.png */,
+				F51BA1EE2F6937BD0003BD85 /* crx_harbor_back@3x.png */,
+				F51BA1F32F6938B00003BD85 /* crx_entry_btn@2x.png */,
+				F51BA1F52F6938B10003BD85 /* crx_entry_btn@3x.png */,
+				F51BA1F22F6938B00003BD85 /* crx_entry_nor@2x.png */,
+				F51BA1F62F6938B10003BD85 /* crx_entry_nor@3x.png */,
+				F51BA1F42F6938B10003BD85 /* crx_entry_sel@2x.png */,
+				F51BA1F72F6938B10003BD85 /* crx_entry_sel@3x.png */,
+			);
+			path = CoreImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5EBCB112F67F4F800AD1A42 /* Carmie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EBCB2B2F67F4FC00AD1A42 /* Build configuration list for PBXNativeTarget "Carmie" */;
+			buildPhases = (
+				1DAA5DA79B2EFC292C033DB7 /* [CP] Check Pods Manifest.lock */,
+				F5EBCB0E2F67F4F800AD1A42 /* Sources */,
+				F5EBCB0F2F67F4F800AD1A42 /* Frameworks */,
+				F5EBCB102F67F4F800AD1A42 /* Resources */,
+				CD5C7F14E06CFE58E62CEB6F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Carmie;
+			productName = Carmie;
+			productReference = F5EBCB122F67F4F800AD1A42 /* Carmie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5EBCB0A2F67F4F800AD1A42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					F5EBCB112F67F4F800AD1A42 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = F5EBCB0D2F67F4F800AD1A42 /* Build configuration list for PBXProject "Carmie" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5EBCB092F67F4F800AD1A42;
+			productRefGroup = F5EBCB132F67F4F800AD1A42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5EBCB112F67F4F800AD1A42 /* Carmie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5EBCB102F67F4F800AD1A42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51BA1E52F68F7690003BD85 /* crx_harbor_pat@2x.png in Resources */,
+				F51BA1E72F68F7690003BD85 /* crx_harbor_edt@3x.png in Resources */,
+				F51BA1C52F68E6B30003BD85 /* crx_stage_bf@3x.png in Resources */,
+				F5EBCB9C2F68009700AD1A42 /* tab_harbor@3x.png in Resources */,
+				F51BA1D22F68E6B30003BD85 /* crx_stage_aig@2x.png in Resources */,
+				F51BA1C72F68E6B30003BD85 /* crx_stage_aig@3x.png in Resources */,
+				F5EBCB962F68009700AD1A42 /* tab_stage@2x.png in Resources */,
+				F51BA1F82F6938B10003BD85 /* crx_entry_nor@2x.png in Resources */,
+				F5EBCBA52F68009700AD1A42 /* tab_stage@3x.png in Resources */,
+				F51BA1CE2F68E6B30003BD85 /* crx_stage_carmie@2x.png in Resources */,
+				F51BA1F12F6937BD0003BD85 /* crx_harbor_back@2x.png in Resources */,
+				F5EBCBA62F68009700AD1A42 /* tab_signal_sel@3x.png in Resources */,
+				F51BA1C62F68E6B30003BD85 /* crx_stage_lc@2x.png in Resources */,
+				F51BA1CB2F68E6B30003BD85 /* crx_stage_em@2x.png in Resources */,
+				F51BA1CD2F68E6B30003BD85 /* crx_stage_jo@2x.png in Resources */,
+				F5EBCB222F67F4FC00AD1A42 /* Assets.xcassets in Resources */,
+				F51BA1CA2F68E6B30003BD85 /* crx_stage_bf@2x.png in Resources */,
+				F51BA1FB2F6938B10003BD85 /* crx_entry_btn@3x.png in Resources */,
+				F51BA1EB2F68F7690003BD85 /* crx_harbor_sep@2x.png in Resources */,
+				F5EBCB9D2F68009700AD1A42 /* tab_signal@2x.png in Resources */,
+				F51BA1D32F68E6B40003BD85 /* crx_stage_em@3x.png in Resources */,
+				F51BA1EC2F68F7690003BD85 /* crx_harbor_zhs@2x.png in Resources */,
+				F51BA1D02F68E6B30003BD85 /* crx_stage_lc@3x.png in Resources */,
+				F51BA1CF2F68E6B30003BD85 /* crx_stage_carmie@3x.png in Resources */,
+				F5EBCB982F68009700AD1A42 /* tab_loop_sel@2x.png in Resources */,
+				F5EBCBAD2F6805BB00AD1A42 /* crx_bg_icon@2x.png in Resources */,
+				F5EBCBA12F68009700AD1A42 /* tab_loop_sel@3x.png in Resources */,
+				F51BA1C92F68E6B30003BD85 /* crx_stage_ddd@2x.png in Resources */,
+				F5EBCB252F67F4FC00AD1A42 /* Base in Resources */,
+				F5EBCBA42F68009700AD1A42 /* tab_stage_sel@3x.png in Resources */,
+				F5EBCBAA2F6800BB00AD1A42 /* tab_btn@2x.png in Resources */,
+				F5EBCBA22F68009700AD1A42 /* tab_signal@3x.png in Resources */,
+				F51BA1ED2F68F7690003BD85 /* crx_harbor_logo@2x.png in Resources */,
+				F5EBCB9B2F68009700AD1A42 /* tab_loop@3x.png in Resources */,
+				F51BA1E42F68F7690003BD85 /* crx_harbor_sep@3x.png in Resources */,
+				F5EBCB9F2F68009700AD1A42 /* tab_loop@2x.png in Resources */,
+				F51BA1CC2F68E6B30003BD85 /* crx_stage_ddd@3x.png in Resources */,
+				F51BA1C82F68E6B30003BD85 /* crx_stage_jo@3x.png in Resources */,
+				F5EBCBA32F68009700AD1A42 /* tab_harbor_sel@3x.png in Resources */,
+				F5EBCBAE2F6805BB00AD1A42 /* crx_bg_icon@3x.png in Resources */,
+				F51BA1F02F6937BD0003BD85 /* crx_harbor_back@3x.png in Resources */,
+				F51BA1E62F68F7690003BD85 /* crx_harbor_zhs@3x.png in Resources */,
+				F51BA1FA2F6938B10003BD85 /* crx_entry_sel@2x.png in Resources */,
+				F51BA1D12F68E6B30003BD85 /* crx_stage_li@3x.png in Resources */,
+				F51BA1E92F68F7690003BD85 /* crx_harbor_edt@2x.png in Resources */,
+				F5EBCBA02F68009700AD1A42 /* tab_signal_sel@2x.png in Resources */,
+				F51BA1C42F68E6B30003BD85 /* crx_stage_li@2x.png in Resources */,
+				F5EBCBA92F6800BB00AD1A42 /* tab_btn@3x.png in Resources */,
+				F51BA1FC2F6938B10003BD85 /* crx_entry_nor@3x.png in Resources */,
+				F5EBCB9A2F68009700AD1A42 /* tab_harbor_sel@2x.png in Resources */,
+				F51BA1EA2F68F7690003BD85 /* crx_harbor_logo@3x.png in Resources */,
+				F51BA1FD2F6938B10003BD85 /* crx_entry_sel@3x.png in Resources */,
+				F5EBCB952F68009700AD1A42 /* tab_harbor@2x.png in Resources */,
+				F5EBCB9E2F68009700AD1A42 /* tab_stage_sel@2x.png in Resources */,
+				F51BA1F92F6938B10003BD85 /* crx_entry_btn@2x.png in Resources */,
+				F51BA1E82F68F7690003BD85 /* crx_harbor_pat@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DAA5DA79B2EFC292C033DB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carmie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD5C7F14E06CFE58E62CEB6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Carmie/Pods-Carmie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5EBCB0E2F67F4F800AD1A42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EBCB362F67F58300AD1A42 /* CRXRouteManager.m in Sources */,
+				F5EBCB392F67F59400AD1A42 /* CRXTabBarController.m in Sources */,
+				F5EBCB6E2F67F77100AD1A42 /* CRXHarborController.m in Sources */,
+				F5EBCB682F67F74800AD1A42 /* CRXChannelController.m in Sources */,
+				F5EBCB652F67F73D00AD1A42 /* CRXSignalBoardController.m in Sources */,
+				F5EBCB7E2F67F7C500AD1A42 /* CRXEntryController.m in Sources */,
+				F51BA1D92F68F2440003BD85 /* CRXStageCell.m in Sources */,
+				F5EBCB172F67F4F800AD1A42 /* AppDelegate.m in Sources */,
+				F5EBCB452F67F5DD00AD1A42 /* CMRAgreementController.m in Sources */,
+				F5EBCB712F67F77E00AD1A42 /* CRXControlController.m in Sources */,
+				F5EBCB592F67F6E500AD1A42 /* CRXBlueprintController.m in Sources */,
+				F5EBCB5C2F67F70800AD1A42 /* CRXLoopBoardController.m in Sources */,
+				F51BA1D62F68F23A0003BD85 /* CRXStageView.m in Sources */,
+				F5EBCB812F67F83500AD1A42 /* CRXNavController.m in Sources */,
+				F5EBCB3C2F67F5A600AD1A42 /* CRXTabBar.m in Sources */,
+				F5EBCB282F67F4FC00AD1A42 /* main.m in Sources */,
+				F5EBCB3F2F67F5BB00AD1A42 /* CRXController.m in Sources */,
+				F5EBCB422F67F5D200AD1A42 /* CMRPrivacyController.m in Sources */,
+				F5EBCB1A2F67F4F800AD1A42 /* SceneDelegate.m in Sources */,
+				F5EBCB332F67F57B00AD1A42 /* CRXAppCoordinator.m in Sources */,
+				F5EBCB562F67F6D800AD1A42 /* CRXStudioController.m in Sources */,
+				F5EBCB742F67F78800AD1A42 /* CRXIdentityEditorController.m in Sources */,
+				F5EBCB502F67F69800AD1A42 /* CRXStageController.m in Sources */,
+				F5EBCB5F2F67F71400AD1A42 /* CRXLoopDetailController.m in Sources */,
+				F5EBCB6B2F67F75600AD1A42 /* CRXPersonaController.m in Sources */,
+				F5EBCB532F67F6B200AD1A42 /* CRXFlowController.m in Sources */,
+				F5EBCB622F67F72A00AD1A42 /* CRXForgeController.m in Sources */,
+				F5EBCB772F67F79800AD1A42 /* CRXAccessCenterController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5EBCB232F67F4FC00AD1A42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5EBCB242F67F4FC00AD1A42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5EBCB292F67F4FC00AD1A42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5EBCB2A2F67F4FC00AD1A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5EBCB2C2F67F4FC00AD1A42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3928198A0808DE21757F7B98 /* Pods-Carmie.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Carmie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carmie.crx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F5EBCB2D2F67F4FC00AD1A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 139126CF8BCEBDC72CAD9EFF /* Pods-Carmie.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Carmie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carmie.crx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5EBCB0D2F67F4F800AD1A42 /* Build configuration list for PBXProject "Carmie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EBCB292F67F4FC00AD1A42 /* Debug */,
+				F5EBCB2A2F67F4FC00AD1A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5EBCB2B2F67F4FC00AD1A42 /* Build configuration list for PBXNativeTarget "Carmie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EBCB2C2F67F4FC00AD1A42 /* Debug */,
+				F5EBCB2D2F67F4FC00AD1A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5EBCB0A2F67F4F800AD1A42 /* Project object */;
+}
