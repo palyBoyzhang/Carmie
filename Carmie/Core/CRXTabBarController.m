@@ -12,6 +12,7 @@
 #import "CRXHarborController.h"
 #import "CRXTabBar.h"
 #import "CRXNavController.h"
+#import "CRXForgeController.h"
 
 @interface CRXTabBarController ()
 
@@ -25,6 +26,12 @@
     [self crx_replaceTabBar];
     
     [self crx_setupControllers];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(crxForgeButtonTapped) name:CRXForgeButtonDidTapNotification object:nil];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)crx_replaceTabBar {
@@ -73,6 +80,21 @@
     CRXNavController *nav = [[CRXNavController alloc] initWithRootViewController:controller];
     
     [self addChildViewController:nav];
+}
+
+- (void)crxForgeButtonTapped {
+    UIViewController *crxSelectedController = self.selectedViewController;
+    if (![crxSelectedController isKindOfClass:[UINavigationController class]]) {
+        return;
+    }
+    
+    UINavigationController *crxNavigationController = (UINavigationController *)crxSelectedController;
+    if ([crxNavigationController.topViewController isKindOfClass:[CRXForgeController class]]) {
+        return;
+    }
+    
+    CRXForgeController *crxForgeController = [[CRXForgeController alloc] init];
+    [crxNavigationController pushViewController:crxForgeController animated:YES];
 }
 
 /*

@@ -5,11 +5,11 @@
 //  Created by w zhang on 2026/3/16.
 //
 
-#import <RTRootNavigationController.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CRXNavController : RTRootNavigationController
+@interface CRXNavController : UINavigationController
 
 @end
 

@@ -9,6 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+FOUNDATION_EXPORT NSNotificationName const CRXForgeButtonDidTapNotification;
+
 @interface CRXTabBar : UITabBar
 
 @end

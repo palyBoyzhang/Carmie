@@ -1,0 +1,6 @@
+framework module Pods_Carmie {
+  umbrella header "Pods-Carmie-umbrella.h"
+
+  export *
+  module * { export * }
+}

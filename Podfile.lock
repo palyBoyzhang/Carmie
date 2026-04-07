@@ -15,9 +15,6 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - IQKeyboardManager (6.5.19)
-  - RTRootNavigationController (0.8.1):
-    - RTRootNavigationController/Core (= 0.8.1)
-  - RTRootNavigationController/Core (0.8.1)
   - TYAlertController (1.2.0)
   - TZImagePickerController (3.8.7):
     - TZImagePickerController/Basic (= 3.8.7)
@@ -29,7 +26,6 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - IQKeyboardManager
-  - RTRootNavigationController
   - TYAlertController
   - TZImagePickerController
   - "UITextView+Placeholder"
@@ -38,7 +34,6 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - IQKeyboardManager
-    - RTRootNavigationController
     - TYAlertController
     - TZImagePickerController
     - "UITextView+Placeholder"
@@ -46,11 +41,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
-  RTRootNavigationController: ca443783baf6ff65a70c4d21ce0eedbbc1fec1fe
   TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
   TZImagePickerController: 5f35bb7266552e36ca834bafa955b869fe086124
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: fb5bfa10575adaaecba5f59af3e6b4e53ae72f45
+PODFILE CHECKSUM: ccd2b6e1df2c3168bb1b471aaf360c2d411a9c26
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

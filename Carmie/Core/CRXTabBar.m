@@ -7,6 +7,8 @@
 
 #import "CRXTabBar.h"
 
+NSNotificationName const CRXForgeButtonDidTapNotification = @"CRXForgeButtonDidTapNotification";
+
 @interface CRXTabBar ()
 
 @property (nonatomic, strong) UIButton *crxForgeButton;
@@ -78,7 +80,7 @@
 }
 
 - (void)crxForgeAction {
-    NSLog(@"Forge Button Click");
+    [[NSNotificationCenter defaultCenter] postNotificationName:CRXForgeButtonDidTapNotification object:nil];
 }
 
 /*

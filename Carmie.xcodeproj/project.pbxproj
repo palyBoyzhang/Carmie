@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194F676B2F7D199300001428 /* crx_entry_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 194F67692F7D199300001428 /* crx_entry_bg@2x.png */; };
+		194F676C2F7D199300001428 /* crx_entry_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 194F676A2F7D199300001428 /* crx_entry_bg@3x.png */; };
+		194F676F2F7DFA4200001428 /* crx_access_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 194F676D2F7DFA4200001428 /* crx_access_bg@2x.png */; };
+		194F67702F7DFA4200001428 /* crx_access_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 194F676E2F7DFA4200001428 /* crx_access_bg@3x.png */; };
+		194F67772F7E139A00001428 /* crx_forge_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 194F67712F7E139A00001428 /* crx_forge_add@2x.png */; };
+		194F67782F7E139A00001428 /* crx_forge_title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 194F67752F7E139A00001428 /* crx_forge_title@2x.png */; };
+		194F67792F7E139A00001428 /* crx_forge_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 194F67722F7E139A00001428 /* crx_forge_add@3x.png */; };
+		194F677A2F7E139A00001428 /* crx_forge_add1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 194F67732F7E139A00001428 /* crx_forge_add1@2x.png */; };
+		194F677B2F7E139A00001428 /* crx_forge_title@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 194F67762F7E139A00001428 /* crx_forge_title@3x.png */; };
+		194F677C2F7E139A00001428 /* crx_forge_add1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 194F67742F7E139A00001428 /* crx_forge_add1@3x.png */; };
+		2A1B00012F80000100001428 /* CRXSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B00032F80000100001428 /* CRXSettingController.m */; };
+		2A1B00042F80000100001428 /* CRXAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B00062F80000100001428 /* CRXAboutController.m */; };
 		C24F46BAD8F8B18ED6C100B8 /* Pods_Carmie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E956110249686661F2FCA741 /* Pods_Carmie.framework */; };
 		F51BA1C42F68E6B30003BD85 /* crx_stage_li@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1B42F68E6B30003BD85 /* crx_stage_li@2x.png */; };
 		F51BA1C52F68E6B30003BD85 /* crx_stage_bf@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F51BA1B52F68E6B30003BD85 /* crx_stage_bf@3x.png */; };
@@ -96,6 +108,20 @@
 
 /* Begin PBXFileReference section */
 		139126CF8BCEBDC72CAD9EFF /* Pods-Carmie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carmie.release.xcconfig"; path = "Target Support Files/Pods-Carmie/Pods-Carmie.release.xcconfig"; sourceTree = "<group>"; };
+		194F67692F7D199300001428 /* crx_entry_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_entry_bg@2x.png"; sourceTree = "<group>"; };
+		194F676A2F7D199300001428 /* crx_entry_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_entry_bg@3x.png"; sourceTree = "<group>"; };
+		194F676D2F7DFA4200001428 /* crx_access_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_access_bg@2x.png"; sourceTree = "<group>"; };
+		194F676E2F7DFA4200001428 /* crx_access_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_access_bg@3x.png"; sourceTree = "<group>"; };
+		194F67712F7E139A00001428 /* crx_forge_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_forge_add@2x.png"; sourceTree = "<group>"; };
+		194F67722F7E139A00001428 /* crx_forge_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_forge_add@3x.png"; sourceTree = "<group>"; };
+		194F67732F7E139A00001428 /* crx_forge_add1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_forge_add1@2x.png"; sourceTree = "<group>"; };
+		194F67742F7E139A00001428 /* crx_forge_add1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_forge_add1@3x.png"; sourceTree = "<group>"; };
+		194F67752F7E139A00001428 /* crx_forge_title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_forge_title@2x.png"; sourceTree = "<group>"; };
+		194F67762F7E139A00001428 /* crx_forge_title@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_forge_title@3x.png"; sourceTree = "<group>"; };
+		2A1B00022F80000100001428 /* CRXSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXSettingController.h; sourceTree = "<group>"; };
+		2A1B00032F80000100001428 /* CRXSettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXSettingController.m; sourceTree = "<group>"; };
+		2A1B00052F80000100001428 /* CRXAboutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRXAboutController.h; sourceTree = "<group>"; };
+		2A1B00062F80000100001428 /* CRXAboutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRXAboutController.m; sourceTree = "<group>"; };
 		3928198A0808DE21757F7B98 /* Pods-Carmie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carmie.debug.xcconfig"; path = "Target Support Files/Pods-Carmie/Pods-Carmie.debug.xcconfig"; sourceTree = "<group>"; };
 		E956110249686661F2FCA741 /* Pods_Carmie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carmie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51BA1B42F68E6B30003BD85 /* crx_stage_li@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crx_stage_li@2x.png"; sourceTree = "<group>"; };
@@ -333,6 +359,10 @@
 				F5EBCB732F67F78800AD1A42 /* CRXIdentityEditorController.m */,
 				F5EBCB752F67F79800AD1A42 /* CRXAccessCenterController.h */,
 				F5EBCB762F67F79800AD1A42 /* CRXAccessCenterController.m */,
+				2A1B00022F80000100001428 /* CRXSettingController.h */,
+				2A1B00032F80000100001428 /* CRXSettingController.m */,
+				2A1B00052F80000100001428 /* CRXAboutController.h */,
+				2A1B00062F80000100001428 /* CRXAboutController.m */,
 			);
 			path = Harbor;
 			sourceTree = "<group>";
@@ -455,6 +485,16 @@
 				F51BA1F62F6938B10003BD85 /* crx_entry_nor@3x.png */,
 				F51BA1F42F6938B10003BD85 /* crx_entry_sel@2x.png */,
 				F51BA1F72F6938B10003BD85 /* crx_entry_sel@3x.png */,
+				194F67692F7D199300001428 /* crx_entry_bg@2x.png */,
+				194F676A2F7D199300001428 /* crx_entry_bg@3x.png */,
+				194F676D2F7DFA4200001428 /* crx_access_bg@2x.png */,
+				194F676E2F7DFA4200001428 /* crx_access_bg@3x.png */,
+				194F67712F7E139A00001428 /* crx_forge_add@2x.png */,
+				194F67722F7E139A00001428 /* crx_forge_add@3x.png */,
+				194F67732F7E139A00001428 /* crx_forge_add1@2x.png */,
+				194F67742F7E139A00001428 /* crx_forge_add1@3x.png */,
+				194F67752F7E139A00001428 /* crx_forge_title@2x.png */,
+				194F67762F7E139A00001428 /* crx_forge_title@3x.png */,
 			);
 			path = CoreImage;
 			sourceTree = "<group>";
@@ -524,6 +564,8 @@
 				F5EBCB9C2F68009700AD1A42 /* tab_harbor@3x.png in Resources */,
 				F51BA1D22F68E6B30003BD85 /* crx_stage_aig@2x.png in Resources */,
 				F51BA1C72F68E6B30003BD85 /* crx_stage_aig@3x.png in Resources */,
+				194F676F2F7DFA4200001428 /* crx_access_bg@2x.png in Resources */,
+				194F67702F7DFA4200001428 /* crx_access_bg@3x.png in Resources */,
 				F5EBCB962F68009700AD1A42 /* tab_stage@2x.png in Resources */,
 				F51BA1F82F6938B10003BD85 /* crx_entry_nor@2x.png in Resources */,
 				F5EBCBA52F68009700AD1A42 /* tab_stage@3x.png in Resources */,
@@ -538,6 +580,8 @@
 				F51BA1FB2F6938B10003BD85 /* crx_entry_btn@3x.png in Resources */,
 				F51BA1EB2F68F7690003BD85 /* crx_harbor_sep@2x.png in Resources */,
 				F5EBCB9D2F68009700AD1A42 /* tab_signal@2x.png in Resources */,
+				194F676B2F7D199300001428 /* crx_entry_bg@2x.png in Resources */,
+				194F676C2F7D199300001428 /* crx_entry_bg@3x.png in Resources */,
 				F51BA1D32F68E6B40003BD85 /* crx_stage_em@3x.png in Resources */,
 				F51BA1EC2F68F7690003BD85 /* crx_harbor_zhs@2x.png in Resources */,
 				F51BA1D02F68E6B30003BD85 /* crx_stage_lc@3x.png in Resources */,
@@ -572,6 +616,12 @@
 				F51BA1FD2F6938B10003BD85 /* crx_entry_sel@3x.png in Resources */,
 				F5EBCB952F68009700AD1A42 /* tab_harbor@2x.png in Resources */,
 				F5EBCB9E2F68009700AD1A42 /* tab_stage_sel@2x.png in Resources */,
+				194F67772F7E139A00001428 /* crx_forge_add@2x.png in Resources */,
+				194F67782F7E139A00001428 /* crx_forge_title@2x.png in Resources */,
+				194F67792F7E139A00001428 /* crx_forge_add@3x.png in Resources */,
+				194F677A2F7E139A00001428 /* crx_forge_add1@2x.png in Resources */,
+				194F677B2F7E139A00001428 /* crx_forge_title@3x.png in Resources */,
+				194F677C2F7E139A00001428 /* crx_forge_add1@3x.png in Resources */,
 				F51BA1F92F6938B10003BD85 /* crx_entry_btn@2x.png in Resources */,
 				F51BA1E82F68F7690003BD85 /* crx_harbor_pat@3x.png in Resources */,
 			);
@@ -609,8 +659,12 @@
 			);
 			inputFileListPaths = (
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -652,6 +706,8 @@
 				F5EBCB532F67F6B200AD1A42 /* CRXFlowController.m in Sources */,
 				F5EBCB622F67F72A00AD1A42 /* CRXForgeController.m in Sources */,
 				F5EBCB772F67F79800AD1A42 /* CRXAccessCenterController.m in Sources */,
+				2A1B00012F80000100001428 /* CRXSettingController.m in Sources */,
+				2A1B00042F80000100001428 /* CRXAboutController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

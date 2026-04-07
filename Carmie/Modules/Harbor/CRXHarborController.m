@@ -7,7 +7,9 @@
 
 #import "CRXHarborController.h"
 #import "CRXAccessCenterController.h"
+#import "CRXSettingController.h"
 #import "CRXEntryController.h"
+#import "CRXIdentityEditorController.h"
 
 @interface CRXHarborController ()
 
@@ -17,7 +19,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)viewDidLoad {
@@ -206,11 +208,13 @@
 }
 
 - (void)crxedtButtonTapped {
-    
+    CRXIdentityEditorController *crxVC = [[CRXIdentityEditorController alloc] init];
+    [self.navigationController pushViewController:crxVC animated:YES];
 }
 
 - (void)crxharbosepButtonTapped {
-    
+    CRXSettingController *crxVC = [[CRXSettingController alloc] init];
+    [self.navigationController pushViewController:crxVC animated:YES];
 }
 
 - (void)crxzhsViewTapped {
