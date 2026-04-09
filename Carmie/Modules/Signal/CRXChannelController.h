@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CRXChannelController : CRXController
 
+@property (nonatomic, strong) NSDictionary *crxMessageItem;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CRXBlueprintController : CRXController
 
+@property (nonatomic, strong) NSDictionary *crxStageItem;
+
 @end
 
 NS_ASSUME_NONNULL_END

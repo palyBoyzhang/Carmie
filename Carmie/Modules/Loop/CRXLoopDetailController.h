@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CRXLoopDetailController : CRXController
 
+@property (nonatomic, strong) NSDictionary *crxMomentItem;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -6,6 +6,8 @@
 //
 
 #import "CRXStageView.h"
+#import "CRXFlowController.h"
+#import "CRXStudioController.h"
 
 @implementation CRXStageView
 
@@ -56,11 +58,24 @@
 }
 
 - (void)crxAiImageTapped {
-    
+    CRXFlowController *crxVC = [[CRXFlowController alloc] init];
+    [[self crx_parentNavigationController] pushViewController:crxVC animated:YES];
 }
 
 - (void)crxEmImageTapped {
-    
+    CRXStudioController *crxVC = [[CRXStudioController alloc] init];
+    [[self crx_parentNavigationController] pushViewController:crxVC animated:YES];
+}
+
+- (UINavigationController *)crx_parentNavigationController {
+    UIResponder *crxResponder = self;
+    while (crxResponder) {
+        crxResponder = crxResponder.nextResponder;
+        if ([crxResponder isKindOfClass:UIViewController.class]) {
+            return ((UIViewController *)crxResponder).navigationController;
+        }
+    }
+    return nil;
 }
 
 /*

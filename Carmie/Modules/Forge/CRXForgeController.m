@@ -41,18 +41,6 @@
 }
 
 - (void)crx_buildViews {
-    UIImageView *crxBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"crx_access_bg"]];
-    crxBackgroundView.contentMode = UIViewContentModeScaleAspectFill;
-    crxBackgroundView.clipsToBounds = YES;
-    [self.view addSubview:crxBackgroundView];
-    crxBackgroundView.translatesAutoresizingMaskIntoConstraints = NO;
-    [NSLayoutConstraint activateConstraints:@[
-        [crxBackgroundView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
-        [crxBackgroundView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
-        [crxBackgroundView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
-        [crxBackgroundView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor]
-    ]];
-    
     UIView *crxOverlayView = [[UIView alloc] init];
     crxOverlayView.backgroundColor = [UIColor colorWithRed:0x14/255.0 green:0x04/255.0 blue:0x28/255.0 alpha:0.36];
     [self.view addSubview:crxOverlayView];

@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CRXStageCell : UITableViewCell
 
+@property (nonatomic, copy) void (^crxMoreTappedBlock)(void);
+
+- (void)crx_configureWithItem:(NSDictionary *)crxItem;
+
 @end
 
 NS_ASSUME_NONNULL_END

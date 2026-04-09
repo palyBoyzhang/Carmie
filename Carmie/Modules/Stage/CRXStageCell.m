@@ -21,7 +21,6 @@
 @property (nonatomic, strong) UIView *crxGroupView;
 @property (nonatomic, strong) UILabel *crxValueLabel;
 @property (nonatomic, strong) UIButton *crxActionButton;
-@property (nonatomic, strong) CAGradientLayer *joinGradientLayer;
 @property (nonatomic, strong) CAGradientLayer *cardGlowLayer;
 
 @end
@@ -38,8 +37,6 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.joinGradientLayer.frame = self.crxActionButton.bounds;
-    self.joinGradientLayer.cornerRadius = CGRectGetHeight(self.crxActionButton.bounds) * 0.5;
     self.cardGlowLayer.frame = self.cardView.bounds;
     self.cardGlowLayer.cornerRadius = 20.f;
 }
@@ -47,6 +44,10 @@
 - (void)prepareForReuse {
     [super prepareForReuse];
     self.coverImageView.image = [UIImage imageNamed:@"crx_stage_aig"];
+    self.crxBadgeView.image = [UIImage imageNamed:@"crx_harbor_logo"];
+    self.crxNameLabel.text = @"CRX Showcase";
+    self.crxMetaLabel.text = @"Preview card";
+    self.crxTitleLabel.text = @"CRX visual sample for layout preview and interface spacing.";
 }
 
 - (void)crx_setupCell {
@@ -83,6 +84,7 @@
     self.coverImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.coverImageView.layer.cornerRadius = 16.f;
     self.coverImageView.clipsToBounds = YES;
+    self.coverImageView.userInteractionEnabled = YES;
     [self.cardView addSubview:self.coverImageView];
     self.coverImageView.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint activateConstraints:@[
@@ -144,7 +146,7 @@
     self.crxNameLabel.font = [UIFont systemFontOfSize:15 weight:UIFontWeightSemibold];
     
     self.crxMetaLabel = [[UILabel alloc] init];
-    self.crxMetaLabel.text = @"Preview card";
+    self.crxMetaLabel.text = @"Hand dance";
     self.crxMetaLabel.textColor = [UIColor colorWithWhite:1 alpha:0.6];
     self.crxMetaLabel.font = [UIFont systemFontOfSize:11 weight:UIFontWeightMedium];
     
@@ -159,12 +161,11 @@
         [crxNameStackView.leadingAnchor constraintEqualToAnchor:self.crxBadgeView.trailingAnchor constant:8]
     ]];
     
-    self.crxMoreButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    UIImageSymbolConfiguration *moreConfig = [UIImageSymbolConfiguration configurationWithPointSize:17 weight:UIImageSymbolWeightBold];
-    UIImage *moreImage = [UIImage systemImageNamed:@"ellipsis" withConfiguration:moreConfig];
+    self.crxMoreButton = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    UIImage *moreImage = [UIImage imageNamed:@"crx_stage_ddd"];
     [self.crxMoreButton setImage:moreImage forState:UIControlStateNormal];
     self.crxMoreButton.tintColor = [UIColor colorWithWhite:1 alpha:0.88];
-    self.crxMoreButton.userInteractionEnabled = NO;
+    [self.crxMoreButton addTarget:self action:@selector(crx_moreTapped) forControlEvents:UIControlEventTouchUpInside];
     [self.coverImageView addSubview:self.crxMoreButton];
     self.crxMoreButton.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint activateConstraints:@[
@@ -193,7 +194,7 @@
     [NSLayoutConstraint activateConstraints:@[
         [self.crxGroupView.topAnchor constraintEqualToAnchor:self.crxTitleLabel.bottomAnchor constant:14],
         [self.crxGroupView.leadingAnchor constraintEqualToAnchor:self.cardView.leadingAnchor constant:14],
-        [self.crxGroupView.widthAnchor constraintEqualToConstant:116],
+        [self.crxGroupView.widthAnchor constraintEqualToConstant:100],
         [self.crxGroupView.heightAnchor constraintEqualToConstant:30],
         [self.crxGroupView.bottomAnchor constraintEqualToAnchor:self.cardView.bottomAnchor constant:-16]
     ]];
@@ -209,19 +210,16 @@
     crxValueView.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint activateConstraints:@[
         [crxValueView.centerYAnchor constraintEqualToAnchor:self.crxGroupView.centerYAnchor],
-        [crxValueView.leadingAnchor constraintEqualToAnchor:self.crxGroupView.trailingAnchor constant:12],
+        [crxValueView.leadingAnchor constraintEqualToAnchor:self.crxGroupView.trailingAnchor constant:5],
         [crxValueView.heightAnchor constraintEqualToConstant:30]
     ]];
     
-    UIImageView *crxValueIconView = [[UIImageView alloc] initWithImage:[UIImage systemImageNamed:@"sparkles"]];
-    crxValueIconView.tintColor = [UIColor colorWithRed:1 green:0x94/255.0 blue:0x4B/255.0 alpha:1];
-    
     self.crxValueLabel = [[UILabel alloc] init];
-    self.crxValueLabel.text = @"CRX Label";
+    self.crxValueLabel.text = @"🔥0.1k";
     self.crxValueLabel.textColor = [UIColor colorWithWhite:1 alpha:0.82];
     self.crxValueLabel.font = [UIFont systemFontOfSize:13 weight:UIFontWeightSemibold];
     
-    UIStackView *crxValueStackView = [[UIStackView alloc] initWithArrangedSubviews:@[crxValueIconView, self.crxValueLabel]];
+    UIStackView *crxValueStackView = [[UIStackView alloc] initWithArrangedSubviews:@[self.crxValueLabel]];
     crxValueStackView.axis = UILayoutConstraintAxisHorizontal;
     crxValueStackView.alignment = UIStackViewAlignmentCenter;
     crxValueStackView.spacing = 4;
@@ -235,12 +233,7 @@
     ]];
     
     self.crxActionButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.crxActionButton setTitle:@"Open" forState:UIControlStateNormal];
-    [self.crxActionButton setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
-    self.crxActionButton.titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightBold];
-    self.crxActionButton.userInteractionEnabled = NO;
-    self.crxActionButton.layer.cornerRadius = 18.f;
-    self.crxActionButton.clipsToBounds = YES;
+    [self.crxActionButton setImage:[UIImage imageNamed:@"crx_stage_jo"] forState:(UIControlStateNormal)];
     [self.cardView addSubview:self.crxActionButton];
     self.crxActionButton.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint activateConstraints:@[
@@ -249,16 +242,6 @@
         [self.crxActionButton.widthAnchor constraintEqualToConstant:106],
         [self.crxActionButton.heightAnchor constraintEqualToConstant:36]
     ]];
-    
-    self.joinGradientLayer = [CAGradientLayer layer];
-    self.joinGradientLayer.colors = @[
-        (__bridge id)[UIColor colorWithRed:1 green:0x97/255.0 blue:0x63/255.0 alpha:1].CGColor,
-        (__bridge id)[UIColor colorWithRed:0xFF/255.0 green:0x5C/255.0 blue:0xC8/255.0 alpha:1].CGColor,
-        (__bridge id)[UIColor colorWithRed:0x6A/255.0 green:0x37/255.0 blue:0xFF/255.0 alpha:1].CGColor
-    ];
-    self.joinGradientLayer.startPoint = CGPointMake(0, 0.5);
-    self.joinGradientLayer.endPoint = CGPointMake(1, 0.5);
-    [self.crxActionButton.layer insertSublayer:self.joinGradientLayer atIndex:0];
 }
 
 - (void)crx_buildMemberAvatars {
@@ -287,6 +270,26 @@
         crxLabel.font = [UIFont systemFontOfSize:12 weight:UIFontWeightBold];
         [crxBadgeBackgroundView addSubview:crxLabel];
     }];
+}
+
+- (void)crx_configureWithItem:(NSDictionary *)crxItem {
+    UIImage *crxCoverImage = crxItem[@"crxCoverImage"];
+    UIImage *crxAvatarImage = crxItem[@"crxAvatarImage"];
+    NSString *crxName = crxItem[@"crxName"];
+    NSString *crxMeta = crxItem[@"crxMeta"];
+    NSString *crxTitle = crxItem[@"crxTitle"];
+    
+    self.coverImageView.image = crxCoverImage ?: [UIImage imageNamed:@"crx_stage_aig"];
+    self.crxBadgeView.image = crxAvatarImage ?: [UIImage imageNamed:@"crx_harbor_logo"];
+    self.crxNameLabel.text = crxName.length ? crxName : @"CRX Showcase";
+    self.crxMetaLabel.text = crxMeta.length ? crxMeta : @"Hand dance";
+    self.crxTitleLabel.text = crxTitle.length ? crxTitle : @"";
+}
+
+- (void)crx_moreTapped {
+    if (self.crxMoreTappedBlock) {
+        self.crxMoreTappedBlock();
+    }
 }
 
 @end

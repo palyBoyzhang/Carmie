@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CRXControlController : CRXController
 
+@property (nonatomic, strong) NSDictionary *crxControlPayload;
+
 @end
 
 NS_ASSUME_NONNULL_END

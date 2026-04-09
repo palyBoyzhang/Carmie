@@ -5,6 +5,49 @@
 	<key>logFormatVersion</key>
 	<integer>11</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>BD1E3E0E-4CA0-4198-B477-23B764904D8F</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BD1E3E0E-4CA0-4198-B477-23B764904D8F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Carmie project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Carmie</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace Carmie with scheme Carmie and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>797391232.36908197</real>
+			<key>timeStoppedRecording</key>
+			<real>797391234.72876501</real>
+			<key>title</key>
+			<string>Building workspace Carmie with scheme Carmie and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>BD1E3E0E-4CA0-4198-B477-23B764904D8F</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

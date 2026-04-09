@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CRXPersonaController : CRXController
 
+@property (nonatomic, strong) NSDictionary *crxUserItem;
+
 @end
 
 NS_ASSUME_NONNULL_END
