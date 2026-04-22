@@ -6,4 +6,5 @@ dependencies: \
   /Users/z/Desktop/2026/Carmie/Carmie/Modules/Signal/CRXSignalHeaderView.h \
   /Users/z/Desktop/2026/Carmie/Carmie/Modules/Signal/CRXSignalMessageCell.h \
   /Users/z/Desktop/2026/Carmie/Carmie/Modules/Signal/CRXChannelController.h \
-  /Users/z/Desktop/2026/Carmie/Carmie/Modules/Signal/CRXPersonaController.h
+  /Users/z/Desktop/2026/Carmie/Carmie/Modules/Signal/CRXPersonaController.h \
+  /Users/z/Desktop/2026/Carmie/Carmie/Modules/Entry/CRXEntryController.h

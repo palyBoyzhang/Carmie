@@ -1,0 +1,9 @@
+Target dependency graph (4 targets)
+Target 'Carmie' in project 'Carmie'
+➜ Implicit dependency on target 'Pods-Carmie' in project 'Pods' via file 'Pods_Carmie.framework' in build phase 'Link Binary'
+➜ Implicit dependency on target 'IQKeyboardManager' in project 'Pods' via options '-framework IQKeyboardManager' in build setting 'OTHER_LDFLAGS'
+Target 'Pods-Carmie' in project 'Pods'
+➜ Explicit dependency on target 'IQKeyboardManager' in project 'Pods'
+Target 'IQKeyboardManager' in project 'Pods'
+➜ Explicit dependency on target 'IQKeyboardManager-IQKeyboardManager' in project 'Pods'
+Target 'IQKeyboardManager-IQKeyboardManager' in project 'Pods' (no dependencies)

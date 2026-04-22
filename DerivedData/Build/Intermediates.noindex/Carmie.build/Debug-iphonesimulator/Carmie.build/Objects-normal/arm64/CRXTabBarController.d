@@ -9,4 +9,5 @@ dependencies: \
   /Users/z/Desktop/2026/Carmie/Carmie/Modules/Harbor/CRXHarborController.h \
   /Users/z/Desktop/2026/Carmie/Carmie/Core/CRXTabBar.h \
   /Users/z/Desktop/2026/Carmie/Carmie/Core/CRXNavController.h \
-  /Users/z/Desktop/2026/Carmie/Carmie/Modules/Forge/CRXForgeController.h
+  /Users/z/Desktop/2026/Carmie/Carmie/Modules/Forge/CRXForgeController.h \
+  /Users/z/Desktop/2026/Carmie/Carmie/Modules/Entry/CRXEntryController.h

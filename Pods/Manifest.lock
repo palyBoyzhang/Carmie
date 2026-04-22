@@ -1,50 +1,20 @@
 PODS:
-  - AFNetworking (4.0.1):
-    - AFNetworking/NSURLSession (= 4.0.1)
-    - AFNetworking/Reachability (= 4.0.1)
-    - AFNetworking/Security (= 4.0.1)
-    - AFNetworking/Serialization (= 4.0.1)
-    - AFNetworking/UIKit (= 4.0.1)
-  - AFNetworking/NSURLSession (4.0.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (4.0.1)
-  - AFNetworking/Security (4.0.1)
-  - AFNetworking/Serialization (4.0.1)
-  - AFNetworking/UIKit (4.0.1):
-    - AFNetworking/NSURLSession
   - IQKeyboardManager (6.5.19)
-  - TYAlertController (1.2.0)
-  - TZImagePickerController (3.8.7):
-    - TZImagePickerController/Basic (= 3.8.7)
-    - TZImagePickerController/Location (= 3.8.7)
-  - TZImagePickerController/Basic (3.8.7)
-  - TZImagePickerController/Location (3.8.7)
-  - "UITextView+Placeholder (1.4.0)"
+  - SSZipArchive (2.4.3)
 
 DEPENDENCIES:
-  - AFNetworking
   - IQKeyboardManager
-  - TYAlertController
-  - TZImagePickerController
-  - "UITextView+Placeholder"
+  - SSZipArchive
 
 SPEC REPOS:
   trunk:
-    - AFNetworking
     - IQKeyboardManager
-    - TYAlertController
-    - TZImagePickerController
-    - "UITextView+Placeholder"
+    - SSZipArchive
 
 SPEC CHECKSUMS:
-  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
-  TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
-  TZImagePickerController: 5f35bb7266552e36ca834bafa955b869fe086124
-  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: ccd2b6e1df2c3168bb1b471aaf360c2d411a9c26
+PODFILE CHECKSUM: 63ea176f8962d09cecc541eea4b47cd931fabe3b
 
 COCOAPODS: 1.16.2

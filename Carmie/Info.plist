@@ -4,8 +4,25 @@
 <dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Carmie needs camera access so you can take a profile photo.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Carmie uses your location while the app is in use to improve local discovery features.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Carmie needs microphone access so you can use voice and video interaction features inside the app.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Carmie needs photo library access so you can choose a profile photo.</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>www.v8k2x7z9m4q1p.xyz</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 	<key>UIDesignRequiresCompatibility</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>

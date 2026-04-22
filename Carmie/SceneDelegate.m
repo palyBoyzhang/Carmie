@@ -1,12 +1,12 @@
 //
 //  SceneDelegate.m
-//  Carmie
+//  CAREXQ
 //
-//  Created by w zhang on 2026/3/16.
+//  Created by CAREXQ on 2026/3/16.
 //
 
 #import "SceneDelegate.h"
-#import "CRXTabBarController.h"
+#import "CAREXQTabBarController.h"
 
 @interface SceneDelegate ()
 
@@ -21,7 +21,7 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
-    CRXTabBarController *tabBarController = [[CRXTabBarController alloc] init];
+    CAREXQTabBarController *tabBarController = [[CAREXQTabBarController alloc] init];
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
 }

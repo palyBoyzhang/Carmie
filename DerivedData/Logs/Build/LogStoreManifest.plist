@@ -6,7 +6,7 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>BD1E3E0E-4CA0-4198-B477-23B764904D8F</key>
+		<key>EDBE32EF-F642-4B82-9E6C-3C28BBFCB435</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>BD1E3E0E-4CA0-4198-B477-23B764904D8F.xcactivitylog</string>
+			<string>EDBE32EF-F642-4B82-9E6C-3C28BBFCB435.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,13 +40,13 @@
 			<key>signature</key>
 			<string>Building workspace Carmie with scheme Carmie and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>797391232.36908197</real>
+			<real>797482805.30846095</real>
 			<key>timeStoppedRecording</key>
-			<real>797391234.72876501</real>
+			<real>797482806.58576298</real>
 			<key>title</key>
 			<string>Building workspace Carmie with scheme Carmie and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>BD1E3E0E-4CA0-4198-B477-23B764904D8F</string>
+			<string>EDBE32EF-F642-4B82-9E6C-3C28BBFCB435</string>
 		</dict>
 	</dict>
 </dict>

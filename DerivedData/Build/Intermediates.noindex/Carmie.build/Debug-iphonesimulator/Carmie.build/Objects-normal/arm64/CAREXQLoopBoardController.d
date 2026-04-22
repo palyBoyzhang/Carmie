@@ -1,0 +1,10 @@
+dependencies: \
+  /Users/z/Desktop/2026/Carmie/Carmie/CAREXQLoopBoardController.m \
+  /Users/z/Desktop/2026/Carmie/Carmie/CAREXQLoopBoardController.h \
+  /Users/z/Desktop/2026/Carmie/Carmie/CAREXQController.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/UIKit.framework/Modules/module.modulemap \
+  /Users/z/Desktop/2026/Carmie/Carmie/CAREXQImage.h \
+  /Users/z/Desktop/2026/Carmie/Carmie/CAREXQLoopHeaderView.h \
+  /Users/z/Desktop/2026/Carmie/Carmie/CAREXQLoopMomentCell.h \
+  /Users/z/Desktop/2026/Carmie/Carmie/CAREXQLoopDetailController.h \
+  /Users/z/Desktop/2026/Carmie/Carmie/CAREXQPersonaController.h

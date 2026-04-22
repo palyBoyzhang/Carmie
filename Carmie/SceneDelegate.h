@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.h
-//  Carmie
+//  CAREXQ
 //
-//  Created by w zhang on 2026/3/16.
+//  Created by CAREXQ on 2026/3/16.
 //
 
 #import <UIKit/UIKit.h>

@@ -7,10 +7,7 @@ target 'Carmie' do
   inhibit_all_warnings!
 
  pod 'IQKeyboardManager'
- pod 'TZImagePickerController'
- pod 'UITextView+Placeholder'
- pod 'TYAlertController'
- pod 'AFNetworking'
+ pod 'SSZipArchive'
 
 end
 
@@ -22,4 +19,3 @@ post_install do |installer|
     end
   end
 end
-
