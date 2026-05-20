@@ -8,6 +8,7 @@
 #import "CAREXQStagePlayerController.h"
 #import "CAREXQImage.h"
 #import <AVFoundation/AVFoundation.h>
+#import "NSString+CAREXQ.h"
 
 @interface CAREXQStagePlayerCommentCell : UITableViewCell
 
@@ -262,7 +263,7 @@
     [self.crxBottomOverlayView addSubview:self.crxNameLabel];
 
     self.crxFollowButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.crxFollowButton setTitle:@"Follow" forState:UIControlStateNormal];
+    [self.crxFollowButton setTitle:@"Fbowldlvopw".carexqHandDanceSteps forState:UIControlStateNormal];
     self.crxFollowButton.titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightSemibold];
     [self.crxFollowButton setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
     self.crxFollowButton.layer.cornerRadius = 15.0;
@@ -284,7 +285,7 @@
     self.crxCommentTriggerButton.layer.borderWidth = 1.0;
     self.crxCommentTriggerButton.layer.borderColor = [UIColor colorWithWhite:1 alpha:0.25].CGColor;
     self.crxCommentTriggerButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    [self.crxCommentTriggerButton setTitle:@"Add comments..." forState:UIControlStateNormal];
+    [self.crxCommentTriggerButton setTitle:@"Avdbdf wcpogmrmeexnltbse.o.x.".carexqHandDanceSteps forState:UIControlStateNormal];
     [self.crxCommentTriggerButton setTitleColor:[UIColor colorWithWhite:1 alpha:0.7] forState:UIControlStateNormal];
     [self.crxCommentTriggerButton setImage:[UIImage systemImageNamed:@"message"] forState:UIControlStateNormal];
     self.crxCommentTriggerButton.tintColor = [UIColor colorWithWhite:1 alpha:0.7];
@@ -431,7 +432,7 @@
     self.crxCommentField = [[UITextField alloc] init];
     self.crxCommentField.delegate = self;
     self.crxCommentField.textColor = UIColor.whiteColor;
-    self.crxCommentField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Add comments..." attributes:@{
+    self.crxCommentField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Avdbdf wcpogmrmeexnltbse.o.x.".carexqHandDanceSteps attributes:@{
         NSForegroundColorAttributeName: [UIColor colorWithWhite:1 alpha:0.56]
     }];
     self.crxCommentField.returnKeyType = UIReturnKeySend;

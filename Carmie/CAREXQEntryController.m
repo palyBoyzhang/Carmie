@@ -353,7 +353,7 @@ static NSString * const CAREXQEntryEmailKey = @"CAREXQEntryEmailKey";
 }
 
 - (void)crxBackButtonTapped {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)crxAgreementButtonTapped {

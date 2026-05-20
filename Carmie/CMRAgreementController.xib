@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24127" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CMRAgreementController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="46E-Nm-3cM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xG-xh-B8o">
+                    <rect key="frame" x="15" y="138" width="363" height="634"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <mutableString key="text">Welcome to Carmie (“Carmie,” “we,” “our,” or “us”). Carmie is a social entertainment app where users can create, share, remix, and discover gesture-based videos, dance ideas, choreography challenges, AI-assisted creative suggestions, expression guides, comments, and video calls.
+
+This User Agreement (“Agreement”) explains the rules for using Carmie. By downloading, accessing, registering for, or using Carmie, you agree to this Agreement. If you do not agree, please do not use the app.
+
+1. Availability
+
+Carmie is available globally except in Mainland China. You may not access or use Carmie from Mainland China or in any jurisdiction where use of the app is prohibited by applicable law.
+
+2. Eligibility
+
+You must be legally permitted to use Carmie in your country or region. If you are under the age of majority in your jurisdiction, you may use Carmie only with permission from a parent or legal guardian.
+
+By using Carmie, you confirm that the information you provide is accurate and that you will comply with this Agreement and all applicable laws.
+
+3. Account Registration and Security
+
+You may need to create an account to use certain features. You are responsible for keeping your account information secure and for all activities that occur under your account.
+
+You agree not to:
+
+Use another person’s account without permission;
+Provide false or misleading information;
+Sell, transfer, or share your account in a way that violates this Agreement;
+Attempt to access accounts, systems, or data without authorization.
+
+If you believe your account has been compromised, please contact us at carmie@gmail.com
+.
+
+4. App Features
+
+Carmie may allow users to:
+
+Upload and share short videos involving gestures, expressions, dances, or choreography;
+Respond to, remix, or participate in challenges;
+Use AI tools to receive gesture combinations, choreography ideas, or creative recommendations;
+Browse gesture and expression guides;
+Comment, chat, interact with other users, and participate in video calls;
+Discover, follow, and connect with other users.
+
+We may update, modify, suspend, or remove features at any time to improve the app, ensure safety, or comply with legal requirements.
+
+5. User Content
+
+“User Content” means any content you upload, post, send, create, display, transmit, or otherwise make available through Carmie, including videos, gestures, choreography, comments, profile information, messages, images, audio, and video call interactions.
+
+You retain ownership of your User Content. However, by posting or sharing User Content on Carmie, you grant us a worldwide, non-exclusive, royalty-free, transferable, sublicensable license to use, host, store, reproduce, modify, adapt, display, distribute, promote, and make available your User Content for the purpose of operating, improving, promoting, and providing Carmie.
+
+You are responsible for your User Content and confirm that you have all rights and permissions needed to share it.
+
+6. Prohibited Content and Conduct
+
+Users must not post, upload, share, stream, transmit, promote, or otherwise make available any content that violates this Agreement, applicable laws, or the rights and safety of others.
+
+You may not publish or share content that includes, encourages, or involves:
+
+Illegal content or activity
+Content that violates any applicable law, regulation, or legal obligation.
+Hate, harassment, or abuse
+Content that attacks, threatens, harasses, bullies, humiliates, or promotes hatred or discrimination against any person or group.
+Violence or dangerous behavior
+Content that promotes, glorifies, instructs, or encourages violence, self-harm, dangerous challenges, physical injury, or reckless behavior.
+Sexual or explicit content
+Pornographic, sexually explicit, exploitative, or inappropriate sexual content, especially any content involving minors.
+Child safety violations
+Any content that exploits, endangers, sexualizes, targets, or harms minors in any way.
+Infringement of rights
+Content that violates copyrights, trademarks, privacy rights, publicity rights, or other intellectual property or personal rights of others.
+False, misleading, or deceptive content
+Scams, impersonation, fraud, fake accounts, misinformation intended to cause harm, or deceptive promotions.
+Private or sensitive information
+Sharing another person’s private information without permission, including addresses, phone numbers, identification documents, financial information, or private messages.
+Spam or platform manipulation
+Spam, bots, fake engagement, repeated unwanted messages, phishing, malicious links, or attempts to manipulate Carmie’s systems.
+Malware or security abuse
+Viruses, harmful code, hacking attempts, unauthorized scraping, reverse engineering, or interference with Carmie’s normal operation.
+Commercial misuse
+Unauthorized advertising, solicitation, promotions, or commercial activity that we have not approved.
+
+We may remove content, limit visibility, suspend features, restrict accounts, or terminate access if we believe content or behavior violates this Agreement.
+
+7. AI Tools
+
+Carmie may provide AI-powered recommendations, gesture combinations, choreography suggestions, expression ideas, or other creative assistance.
+
+AI-generated suggestions are provided for inspiration only. You are responsible for reviewing and deciding whether to use any AI-generated idea. You must not use AI tools to create or promote prohibited, illegal, harmful, infringing, or unsafe content.
+
+We do not guarantee that AI suggestions will be accurate, original, appropriate, or suitable for your needs.
+
+8. Video Calls and User Interactions
+
+Carmie may allow users to communicate through comments, chat, and video calls. You are responsible for your interactions with other users.
+
+You agree not to use video calls, comments, messages, or other communication tools to harass, threaten, exploit, deceive, abuse, or harm others.
+
+We may monitor, review, restrict, or remove access to communication features where necessary for safety, legal compliance, or enforcement of this Agreement.
+
+9. Intellectual Property
+
+Carmie, including its software, design, branding, logos, features, technology, and content provided by us, is owned by or licensed to Carmie and is protected by intellectual property laws.
+
+You may not copy, modify, distribute, sell, lease, reverse engineer, or create derivative works from Carmie except as permitted by law or with our written permission.
+
+10. Music and Third-Party Content
+
+Carmie may allow users to create videos using music, sounds, or third-party materials. You are responsible for ensuring that your use of music, choreography, images, videos, or other materials does not violate the rights of others.
+
+We may remove or restrict content if we receive a complaint or believe the content may infringe third-party rights.
+
+11. Privacy
+
+Your use of Carmie is also subject to our Privacy Policy, which explains how we collect, use, store, and protect your information. By using Carmie, you agree that we may process your information as described in the Privacy Policy.
+
+12. Enforcement
+
+If you violate this Agreement, we may take action, including but not limited to:
+
+Removing or limiting access to your content;
+Restricting certain features;
+Suspending or terminating your account;
+Reporting unlawful activity to relevant authorities where required or appropriate;
+Taking legal action if necessary.
+
+We may also take action to protect users, our platform, or third parties from harm, legal risk, or abuse.
+
+13. Termination
+
+You may stop using Carmie at any time. We may suspend or terminate your access to Carmie if you violate this Agreement, create risk for the app or other users, or if we are required to do so by law.
+
+After termination, certain provisions of this Agreement will continue to apply, including those related to ownership, licenses, prohibited conduct, disclaimers, limitation of liability, and dispute resolution.
+
+14. Disclaimers
+
+Carmie is provided on an “as is” and “as available” basis. We do not guarantee that the app will be uninterrupted, error-free, secure, or always available.
+
+We do not control or guarantee user behavior, user content, AI-generated suggestions, or interactions between users.
+
+To the fullest extent permitted by law, we disclaim all warranties, whether express or implied.
+
+15. Limitation of Liability
+
+To the fullest extent permitted by law, Carmie will not be liable for any indirect, incidental, special, consequential, punitive, or exemplary damages, including loss of data, profits, reputation, or business opportunities arising from your use of or inability to use the app.
+
+16. Changes to This Agreement
+
+We may update this Agreement from time to time. If we make significant changes, we may notify you through the app or by other reasonable means.
+
+Your continued use of Carmie after the updated Agreement becomes effective means you accept the updated terms.
+
+17. Contact Us
+
+If you have questions, complaints, or requests regarding this Agreement, please contact us at:
+
+Email: carmie@gmail.com</mutableString>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.031372549020000001" green="0.031372549020000001" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="1xG-xh-B8o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="WYi-Ax-Sny"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1xG-xh-B8o" secondAttribute="trailing" constant="15" id="YjG-EU-l6Z"/>
+                <constraint firstItem="1xG-xh-B8o" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="i9c-gK-Lj4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1xG-xh-B8o" secondAttribute="bottom" constant="12" id="jV5-yP-1BM"/>
+            </constraints>
+            <point key="canvasLocation" x="124" y="154"/>
+        </view>
+    </objects>
+</document>

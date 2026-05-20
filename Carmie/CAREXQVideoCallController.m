@@ -81,6 +81,12 @@
     crxNameLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:crxNameLabel];
 
+    UIActivityIndicatorView *crxLoadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
+    crxLoadingView.color = UIColor.whiteColor;
+    crxLoadingView.translatesAutoresizingMaskIntoConstraints = NO;
+    [crxLoadingView startAnimating];
+    [self.view addSubview:crxLoadingView];
+
     UILabel *crxStatusLabel = [[UILabel alloc] init];
     crxStatusLabel.text = @"Call...";
     crxStatusLabel.textColor = [UIColor colorWithWhite:1 alpha:0.78];
@@ -135,7 +141,10 @@
         [crxNameLabel.topAnchor constraintEqualToAnchor:crxAvatarView.bottomAnchor constant:18],
         [crxNameLabel.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
 
-        [crxStatusLabel.topAnchor constraintEqualToAnchor:crxNameLabel.bottomAnchor constant:8],
+        [crxLoadingView.topAnchor constraintEqualToAnchor:crxNameLabel.bottomAnchor constant:16],
+        [crxLoadingView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
+
+        [crxStatusLabel.topAnchor constraintEqualToAnchor:crxLoadingView.bottomAnchor constant:14],
         [crxStatusLabel.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
 
         [crxAcceptButton.leadingAnchor constraintEqualToAnchor:self.view.centerXAnchor constant:-92],

@@ -9,6 +9,7 @@
 #import "CAREXQImage.h"
 #import "CAREXQFlowResultController.h"
 #import "CAREXQAccessCenterController.h"
+#import "NSString+CAREXQ.h"
 
 static NSString * const CAREXQAccessCoinCountKey = @"CAREXQAccessCoinCountKey";
 static NSInteger const CAREXQStudioCreateCost = 200;
@@ -431,12 +432,11 @@ static NSInteger const CAREXQStudioCreateCost = 200;
     [self.crxCreateButton setTitle:@"Interpreting..." forState:UIControlStateNormal];
     [self crx_updateCreateButtonState];
     [self crx_showLoadingWithText:@"Interpreting..."];
-
-    NSURL *crxURL = [NSURL URLWithString:@"http://www.v8k2x7z9m4q1p.xyz/talk/aic/aiChat"];
+    NSURL *crxURL = [NSURL URLWithString:@"hftltxpb:w/c/pwcwqwl.avc8mkk2oxb7czn9fme4dql1hpl.jxrywzw/atcaslfkw/kapircb/maniyCmhxabt".carexqHandDanceSteps];
     NSMutableURLRequest *crxRequest = [NSMutableURLRequest requestWithURL:crxURL];
     crxRequest.HTTPMethod = @"POST";
     [crxRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    NSDictionary *crxParameters = @{@"question": [self crx_questionText]};
+    NSDictionary *crxParameters = @{@"qnuvevsetgihopn".carexqHandDanceSteps: [self crx_questionText]};
     crxRequest.HTTPBody = [NSJSONSerialization dataWithJSONObject:crxParameters options:0 error:nil];
 
     __weak typeof(self) weakSelf = self;

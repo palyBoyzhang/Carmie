@@ -7,6 +7,7 @@
 
 #import "CAREXQLoopMomentCell.h"
 #import "CAREXQImage.h"
+#import "NSString+CAREXQ.h"
 
 @interface CAREXQLoopMomentCell ()
 
@@ -94,7 +95,7 @@
     crxCommentIconView.translatesAutoresizingMaskIntoConstraints = NO;
     
     self.crxCommentLabel = [[UILabel alloc] init];
-    self.crxCommentLabel.text = @"Add comments...";
+    self.crxCommentLabel.text = @"Avdbdf wcpogmrmeexnltbse.o.x.".carexqHandDanceSteps;
     self.crxCommentLabel.textColor = [UIColor colorWithWhite:1 alpha:0.58];
     self.crxCommentLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightMedium];
     [self.crxCommentView addSubview:self.crxCommentLabel];

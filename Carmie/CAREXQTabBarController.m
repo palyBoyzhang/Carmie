@@ -14,7 +14,7 @@
 #import "CAREXQTabBar.h"
 #import "CAREXQNavController.h"
 #import "CAREXQForgeController.h"
-#import "CAREXQEntryController.h"
+#import "CAREXQEntryGateController.h"
 
 @interface CAREXQTabBarController ()
 
@@ -92,7 +92,7 @@
     
     UINavigationController *crxNavigationController = (UINavigationController *)crxSelectedController;
     if (![CAREXQController crx_isLoggedIn]) {
-        CAREXQEntryController *crxEntryController = [[CAREXQEntryController alloc] init];
+        CAREXQEntryGateController *crxEntryController = [[CAREXQEntryGateController alloc] init];
         [crxNavigationController pushViewController:crxEntryController animated:YES];
         return;
     }

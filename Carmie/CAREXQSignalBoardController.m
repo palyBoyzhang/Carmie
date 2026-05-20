@@ -11,7 +11,7 @@
 #import "CAREXQSignalMessageCell.h"
 #import "CAREXQChannelController.h"
 #import "CAREXQPersonaController.h"
-#import "CAREXQEntryController.h"
+#import "CAREXQEntryGateController.h"
 
 static NSString * const CAREXQSignalMessageCellID = @"CAREXQSignalMessageCellID";
 static NSString * const CAREXQHarborLoginStateKey = @"CAREXQEntryLoginStateKey";
@@ -249,7 +249,7 @@ static NSString * const CAREXQHarborLoginStateKey = @"CAREXQEntryLoginStateKey";
 }
 
 - (void)crxLoginTapped {
-    CAREXQEntryController *crxController = [[CAREXQEntryController alloc] init];
+    CAREXQEntryGateController *crxController = [[CAREXQEntryGateController alloc] init];
     [self.navigationController pushViewController:crxController animated:YES];
 }
 

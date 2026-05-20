@@ -15,18 +15,18 @@
 @implementation CAREXQNavController
 
 + (void)load {
-    UINavigationBar *crxNaviBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
+    UINavigationBar *CAREXQacx = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSFontAttributeName] = [UIFont systemFontOfSize:18 weight:(UIFontWeightBold)];
     attrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
-    [crxNaviBar setTitleTextAttributes:attrs];
-    [crxNaviBar setShadowImage:[UIImage new]];
+    [CAREXQacx setTitleTextAttributes:attrs];
+    [CAREXQacx setShadowImage:[UIImage new]];
     UINavigationBarAppearance *crxNaviBarAppearance = [[UINavigationBarAppearance alloc] init];
     [crxNaviBarAppearance configureWithOpaqueBackground];
     crxNaviBarAppearance.titleTextAttributes = attrs;
     crxNaviBarAppearance.backgroundColor = [UIColor clearColor];
-    crxNaviBar.standardAppearance = crxNaviBarAppearance;
-    crxNaviBar.scrollEdgeAppearance = crxNaviBarAppearance;
+    CAREXQacx.standardAppearance = crxNaviBarAppearance;
+    CAREXQacx.scrollEdgeAppearance = crxNaviBarAppearance;
     [UITableView appearance].sectionHeaderTopPadding = 0;
     crxNaviBarAppearance.shadowColor = [UIColor clearColor];
     crxNaviBarAppearance.backgroundEffect = nil;

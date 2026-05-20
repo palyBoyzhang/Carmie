@@ -17,10 +17,15 @@
 		191F1E8C2F84EAA600A4397F /* crx_stage_5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 191F1E812F84EAA600A4397F /* crx_stage_5.mp4 */; };
 		199F6F472F97618800AA113A /* CAREXQImage.zip in Resources */ = {isa = PBXBuildFile; fileRef = 199F6F462F97618800AA113A /* CAREXQImage.zip */; };
 		199F6F4A2F97629900AA113A /* CAREXQImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 199F6F492F97629900AA113A /* CAREXQImage.m */; };
+		19B8ADA52FB1B7780004D497 /* CMRAgreementController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B8ADA42FB1B7780004D497 /* CMRAgreementController.xib */; };
+		19B8ADA72FB1B9610004D497 /* CMRPrivacyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B8ADA62FB1B9610004D497 /* CMRPrivacyController.xib */; };
+		19B8AEE32FB1CBD70004D497 /* NSString+CAREXQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B8AEE22FB1CBD70004D497 /* NSString+CAREXQ.m */; };
 		2A1B00012F80000100001428 /* CAREXQSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B00032F80000100001428 /* CAREXQSettingController.m */; };
 		2A1B00042F80000100001428 /* CAREXQAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B00062F80000100001428 /* CAREXQAboutController.m */; };
 		2A1B00072F80000100001428 /* CAREXQStagePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B00082F80000100001428 /* CAREXQStagePlayerController.m */; };
 		2A1B000A2F91000100001428 /* CAREXQFlowResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B000C2F91000100001428 /* CAREXQFlowResultController.m */; };
+		55F1A00130C0000100AC1001 /* CAREXQEntryGateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F1A00330C0000100AC1001 /* CAREXQEntryGateController.m */; };
+		55F1A00430C0000200AC1001 /* CAREXQRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F1A00630C0000200AC1001 /* CAREXQRegisterController.m */; };
 		C24F46BAD8F8B18ED6C100B8 /* Pods_Carmie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E956110249686661F2FCA741 /* Pods_Carmie.framework */; };
 		F51BA1D62F68F23A0003BD85 /* CAREXQStageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F51BA1D52F68F23A0003BD85 /* CAREXQStageView.m */; };
 		F51BA1D92F68F2440003BD85 /* CAREXQStageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F51BA1D82F68F2440003BD85 /* CAREXQStageCell.m */; };
@@ -74,6 +79,11 @@
 		199F6F462F97618800AA113A /* CAREXQImage.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = CAREXQImage.zip; sourceTree = "<group>"; };
 		199F6F482F97629900AA113A /* CAREXQImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAREXQImage.h; sourceTree = "<group>"; };
 		199F6F492F97629900AA113A /* CAREXQImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAREXQImage.m; sourceTree = "<group>"; };
+		19B8ADA42FB1B7780004D497 /* CMRAgreementController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CMRAgreementController.xib; sourceTree = "<group>"; };
+		19B8ADA62FB1B9610004D497 /* CMRPrivacyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CMRPrivacyController.xib; sourceTree = "<group>"; };
+		19B8ADA82FB1C8140004D497 /* Carmie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Carmie.entitlements; sourceTree = "<group>"; };
+		19B8AEE12FB1CBD70004D497 /* NSString+CAREXQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CAREXQ.h"; sourceTree = "<group>"; };
+		19B8AEE22FB1CBD70004D497 /* NSString+CAREXQ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CAREXQ.m"; sourceTree = "<group>"; };
 		2A1B00022F80000100001428 /* CAREXQSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAREXQSettingController.h; sourceTree = "<group>"; };
 		2A1B00032F80000100001428 /* CAREXQSettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAREXQSettingController.m; sourceTree = "<group>"; };
 		2A1B00052F80000100001428 /* CAREXQAboutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAREXQAboutController.h; sourceTree = "<group>"; };
@@ -83,6 +93,10 @@
 		2A1B000B2F91000100001428 /* CAREXQFlowResultController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAREXQFlowResultController.h; sourceTree = "<group>"; };
 		2A1B000C2F91000100001428 /* CAREXQFlowResultController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAREXQFlowResultController.m; sourceTree = "<group>"; };
 		3928198A0808DE21757F7B98 /* Pods-Carmie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carmie.debug.xcconfig"; path = "Target Support Files/Pods-Carmie/Pods-Carmie.debug.xcconfig"; sourceTree = "<group>"; };
+		55F1A00230C0000100AC1001 /* CAREXQEntryGateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAREXQEntryGateController.h; sourceTree = "<group>"; };
+		55F1A00330C0000100AC1001 /* CAREXQEntryGateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAREXQEntryGateController.m; sourceTree = "<group>"; };
+		55F1A00530C0000200AC1001 /* CAREXQRegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAREXQRegisterController.h; sourceTree = "<group>"; };
+		55F1A00630C0000200AC1001 /* CAREXQRegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAREXQRegisterController.m; sourceTree = "<group>"; };
 		E956110249686661F2FCA741 /* Pods_Carmie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carmie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51BA1D42F68F23A0003BD85 /* CAREXQStageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAREXQStageView.h; sourceTree = "<group>"; };
 		F51BA1D52F68F23A0003BD85 /* CAREXQStageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAREXQStageView.m; sourceTree = "<group>"; };
@@ -224,6 +238,7 @@
 		F5EBCB142F67F4F800AD1A42 /* Carmie */ = {
 			isa = PBXGroup;
 			children = (
+				19B8ADA82FB1C8140004D497 /* Carmie.entitlements */,
 				191F1E7C2F84EA8C00A4397F /* CAREXQRes */,
 				F5EBCB822F67FBAC00AD1A42 /* CAREXQmage */,
 				F5EBCB312F67F57B00AD1A42 /* CAREXQAppCoordinator.h */,
@@ -240,6 +255,8 @@
 				F5EBCB3E2F67F5BB00AD1A42 /* CAREXQController.m */,
 				199F6F482F97629900AA113A /* CAREXQImage.h */,
 				199F6F492F97629900AA113A /* CAREXQImage.m */,
+				19B8AEE12FB1CBD70004D497 /* NSString+CAREXQ.h */,
+				19B8AEE22FB1CBD70004D497 /* NSString+CAREXQ.m */,
 				F5EBCB4E2F67F69800AD1A42 /* CAREXQStageController.h */,
 				F5EBCB4F2F67F69800AD1A42 /* CAREXQStageController.m */,
 				F5EBCB512F67F6B200AD1A42 /* CAREXQFlowController.h */,
@@ -294,12 +311,18 @@
 				2A1B00032F80000100001428 /* CAREXQSettingController.m */,
 				2A1B00052F80000100001428 /* CAREXQAboutController.h */,
 				2A1B00062F80000100001428 /* CAREXQAboutController.m */,
+				55F1A00230C0000100AC1001 /* CAREXQEntryGateController.h */,
+				55F1A00330C0000100AC1001 /* CAREXQEntryGateController.m */,
+				55F1A00530C0000200AC1001 /* CAREXQRegisterController.h */,
+				55F1A00630C0000200AC1001 /* CAREXQRegisterController.m */,
 				F5EBCB7C2F67F7C500AD1A42 /* CAREXQEntryController.h */,
 				F5EBCB7D2F67F7C500AD1A42 /* CAREXQEntryController.m */,
 				F5EBCB402F67F5D200AD1A42 /* CMRPrivacyController.h */,
 				F5EBCB412F67F5D200AD1A42 /* CMRPrivacyController.m */,
+				19B8ADA62FB1B9610004D497 /* CMRPrivacyController.xib */,
 				F5EBCB432F67F5DD00AD1A42 /* CMRAgreementController.h */,
 				F5EBCB442F67F5DD00AD1A42 /* CMRAgreementController.m */,
+				19B8ADA42FB1B7780004D497 /* CMRAgreementController.xib */,
 				F5EBCB152F67F4F800AD1A42 /* AppDelegate.h */,
 				F5EBCB162F67F4F800AD1A42 /* AppDelegate.m */,
 				F5EBCB182F67F4F800AD1A42 /* SceneDelegate.h */,
@@ -384,9 +407,11 @@
 				191F1E852F84EAA600A4397F /* crx_stage_4.mp4 in Resources */,
 				191F1E862F84EAA600A4397F /* crx_stage_3.mp4 in Resources */,
 				191F1E872F84EAA600A4397F /* crx_stage_6.mp4 in Resources */,
+				19B8ADA52FB1B7780004D497 /* CMRAgreementController.xib in Resources */,
 				191F1E882F84EAA600A4397F /* crx_stage_7.mp4 in Resources */,
 				191F1E892F84EAA600A4397F /* crx_stage_2.mp4 in Resources */,
 				191F1E8A2F84EAA600A4397F /* crx_stage_1.mp4 in Resources */,
+				19B8ADA72FB1B9610004D497 /* CMRPrivacyController.xib in Resources */,
 				191F1E8B2F84EAA600A4397F /* crx_stage_8.mp4 in Resources */,
 				191F1E8C2F84EAA600A4397F /* crx_stage_5.mp4 in Resources */,
 				199F6F472F97618800AA113A /* CAREXQImage.zip in Resources */,
@@ -451,6 +476,8 @@
 				F5EBCB682F67F74800AD1A42 /* CAREXQChannelController.m in Sources */,
 				F5EBCB652F67F73D00AD1A42 /* CAREXQSignalBoardController.m in Sources */,
 				F5EBCB7E2F67F7C500AD1A42 /* CAREXQEntryController.m in Sources */,
+				55F1A00130C0000100AC1001 /* CAREXQEntryGateController.m in Sources */,
+				55F1A00430C0000200AC1001 /* CAREXQRegisterController.m in Sources */,
 				F51BA1D92F68F2440003BD85 /* CAREXQStageCell.m in Sources */,
 				F5EBCB172F67F4F800AD1A42 /* AppDelegate.m in Sources */,
 				F5EBCB452F67F5DD00AD1A42 /* CMRAgreementController.m in Sources */,
@@ -465,6 +492,7 @@
 				F5EBCB3F2F67F5BB00AD1A42 /* CAREXQController.m in Sources */,
 				199F6F4A2F97629900AA113A /* CAREXQImage.m in Sources */,
 				F5EBCB422F67F5D200AD1A42 /* CMRPrivacyController.m in Sources */,
+				19B8AEE32FB1CBD70004D497 /* NSString+CAREXQ.m in Sources */,
 				F6A200032F90000200A0B001 /* CAREXQSignalHeaderView.m in Sources */,
 				F5EBCB1A2F67F4F800AD1A42 /* SceneDelegate.m in Sources */,
 				F5EBCB332F67F57B00AD1A42 /* CAREXQAppCoordinator.m in Sources */,
@@ -623,6 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Carmie/Carmie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -654,6 +683,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Carmie/Carmie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

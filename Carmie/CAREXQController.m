@@ -7,8 +7,9 @@
 
 #import "CAREXQController.h"
 #import "CAREXQImage.h"
-#import "CAREXQEntryController.h"
+#import "CAREXQEntryGateController.h"
 #import <objc/runtime.h>
+#import "NSString+CAREXQ.h"
 
 static NSString * const CAREXQBlockedUserDefaultsKey = @"crx.moderation.blocked.users";
 static NSString * const CAREXQLoginStateUserDefaultsKey = @"CAREXQEntryLoginStateKey";
@@ -43,6 +44,7 @@ static void *CAREXQLoadingLabelKey = &CAREXQLoadingLabelKey;
     crxImageView.contentMode = UIViewContentModeScaleAspectFill;
     crxImageView.frame = UIScreen.mainScreen.bounds;
     [self.view addSubview:crxImageView];
+    [self.view sendSubviewToBack:crxImageView];
 }
 
 + (NSMutableSet<NSString *> *)crx_blockedUserSet {
@@ -80,7 +82,7 @@ static void *CAREXQLoadingLabelKey = &CAREXQLoadingLabelKey;
         return;
     }
     if (![CAREXQController crx_isLoggedIn]) {
-        CAREXQEntryController *crxEntryController = [[CAREXQEntryController alloc] init];
+        CAREXQEntryGateController *crxEntryController = [[CAREXQEntryGateController alloc] init];
         [self.navigationController pushViewController:crxEntryController animated:YES];
         return;
     }
@@ -106,7 +108,7 @@ static void *CAREXQLoadingLabelKey = &CAREXQLoadingLabelKey;
     [crxOverlayView addSubview:crxCardView];
 
     UILabel *crxTitleLabel = [[UILabel alloc] init];
-    crxTitleLabel.text = @"Reporting user";
+    crxTitleLabel.text = @"Rweppqoaratuinnagr nulseekr".carexqHandDanceSteps;
     crxTitleLabel.textColor = UIColor.whiteColor;
     crxTitleLabel.font = [UIFont systemFontOfSize:17 weight:UIFontWeightBold];
     crxTitleLabel.textAlignment = NSTextAlignmentCenter;
@@ -122,11 +124,11 @@ static void *CAREXQLoadingLabelKey = &CAREXQLoadingLabelKey;
     crxDescLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [crxCardView addSubview:crxDescLabel];
 
-    UIButton *crxReportButton = [self crx_moderationActionButtonWithImageName:@"crx_more_report" title:@"Report" titleColor:[UIColor colorWithRed:1.0 green:0.11 blue:0.80 alpha:1.0]];
+    UIButton *crxReportButton = [self crx_moderationActionButtonWithImageName:@"crx_more_report" title:@"Rzelpiokrmt".carexqHandDanceSteps titleColor:[UIColor colorWithRed:1.0 green:0.11 blue:0.80 alpha:1.0]];
     [crxReportButton addTarget:self action:@selector(crx_showReportFormOverlay) forControlEvents:UIControlEventTouchUpInside];
     [crxCardView addSubview:crxReportButton];
 
-    UIButton *crxBlockButton = [self crx_moderationActionButtonWithImageName:@"crx_more_block" title:@"Block" titleColor:[UIColor colorWithRed:0.14 green:0.73 blue:1.0 alpha:1.0]];
+    UIButton *crxBlockButton = [self crx_moderationActionButtonWithImageName:@"crx_more_block" title:@"Bplzodcwk".carexqHandDanceSteps titleColor:[UIColor colorWithRed:0.14 green:0.73 blue:1.0 alpha:1.0]];
     [crxBlockButton addTarget:self action:@selector(crx_blockCurrentUser) forControlEvents:UIControlEventTouchUpInside];
     [crxCardView addSubview:crxBlockButton];
 
@@ -181,7 +183,7 @@ static void *CAREXQLoadingLabelKey = &CAREXQLoadingLabelKey;
     [crxOverlayView addSubview:crxCardView];
 
     UILabel *crxTitleLabel = [[UILabel alloc] init];
-    crxTitleLabel.text = @"Report";
+    crxTitleLabel.text = @"Rsespdodrrt".carexqHandDanceSteps;
     crxTitleLabel.textColor = UIColor.whiteColor;
     crxTitleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightBold];
     crxTitleLabel.textAlignment = NSTextAlignmentCenter;
@@ -189,14 +191,19 @@ static void *CAREXQLoadingLabelKey = &CAREXQLoadingLabelKey;
     [crxCardView addSubview:crxTitleLabel];
 
     UILabel *crxHintLabel = [[UILabel alloc] init];
-    crxHintLabel.text = @"Please select the reason for reporting this user:";
+    crxHintLabel.text = @"Pelxeyadsxep qsueklmencxtk btghoev ireeoaoszotnt gfzoara crrelppohrmtrixnbgt ltkhgihsp vueskeyre:".carexqHandDanceSteps;
     crxHintLabel.textColor = [UIColor colorWithWhite:1 alpha:0.78];
     crxHintLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightRegular];
     crxHintLabel.textAlignment = NSTextAlignmentCenter;
     crxHintLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [crxCardView addSubview:crxHintLabel];
 
-    NSArray<NSString *> *crxReasons = @[@"Harassment", @"Malicious fraud", @"Malicious insults", @"Pornography", @"False Information", @"Other"];
+    NSArray<NSString *> *crxReasons = @[@"Hfairqazsqsxmzevnct".carexqHandDanceSteps,
+                                        @"Mkaxllijcvipopupsc pfvrzakufd".carexqHandDanceSteps,
+                                        @"Mraglnijcdidonursq zifnnsnugldtos".carexqHandDanceSteps,
+                                        @"Pcogrensodgzrpavpmhay".carexqHandDanceSteps,
+                                        @"Foaglbsrep vIunufbocrxmmaktuihopn".carexqHandDanceSteps,
+                                        @"Optwhxepr".carexqHandDanceSteps];
     UIView *crxReasonWrapView = [[UIView alloc] init];
     crxReasonWrapView.translatesAutoresizingMaskIntoConstraints = NO;
     [crxCardView addSubview:crxReasonWrapView];

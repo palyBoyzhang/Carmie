@@ -8,6 +8,7 @@
 #import "CAREXQAccessCenterController.h"
 #import "CAREXQImage.h"
 #import <StoreKit/StoreKit.h>
+#import "NSString+CAREXQ.h"
 
 static NSString * const CAREXQAccessCoinCountKey = @"CAREXQAccessCoinCountKey";
 static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID";
@@ -17,7 +18,7 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
 @property (nonatomic, strong) UIView *crxCardView;
 @property (nonatomic, strong) UIView *crxBadgeView;
 @property (nonatomic, strong) UIImageView *crxBadgeIconView;
-@property (nonatomic, strong) UILabel *crxAmountLabel;
+@property (nonatomic, strong) UILabel *CAREXQAmtLabel;
 @property (nonatomic, strong) UILabel *crxPriceLabel;
 @property (nonatomic, strong) UIButton *crxActionButton;
 @property (nonatomic, strong) CAGradientLayer *crxActionGradientLayer;
@@ -74,11 +75,11 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
     [self.crxBadgeView addSubview:self.crxBadgeIconView];
     self.crxBadgeIconView.translatesAutoresizingMaskIntoConstraints = NO;
     
-    self.crxAmountLabel = [[UILabel alloc] init];
-    self.crxAmountLabel.textColor = UIColor.whiteColor;
-    self.crxAmountLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightBold];
-    [self.crxBadgeView addSubview:self.crxAmountLabel];
-    self.crxAmountLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CAREXQAmtLabel = [[UILabel alloc] init];
+    self.CAREXQAmtLabel.textColor = UIColor.whiteColor;
+    self.CAREXQAmtLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightBold];
+    [self.crxBadgeView addSubview:self.CAREXQAmtLabel];
+    self.CAREXQAmtLabel.translatesAutoresizingMaskIntoConstraints = NO;
     
     self.crxPriceLabel = [[UILabel alloc] init];
     self.crxPriceLabel.textColor = UIColor.whiteColor;
@@ -116,9 +117,9 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
         [self.crxBadgeIconView.widthAnchor constraintEqualToConstant:14],
         [self.crxBadgeIconView.heightAnchor constraintEqualToConstant:14],
         
-        [self.crxAmountLabel.centerYAnchor constraintEqualToAnchor:self.crxBadgeView.centerYAnchor],
-        [self.crxAmountLabel.leadingAnchor constraintEqualToAnchor:self.crxBadgeIconView.trailingAnchor constant:4],
-        [self.crxAmountLabel.trailingAnchor constraintLessThanOrEqualToAnchor:self.crxBadgeView.trailingAnchor constant:-8],
+        [self.CAREXQAmtLabel.centerYAnchor constraintEqualToAnchor:self.crxBadgeView.centerYAnchor],
+        [self.CAREXQAmtLabel.leadingAnchor constraintEqualToAnchor:self.crxBadgeIconView.trailingAnchor constant:4],
+        [self.CAREXQAmtLabel.trailingAnchor constraintLessThanOrEqualToAnchor:self.crxBadgeView.trailingAnchor constant:-8],
         
         [self.crxPriceLabel.centerXAnchor constraintEqualToAnchor:self.crxCardView.centerXAnchor],
         [self.crxPriceLabel.topAnchor constraintEqualToAnchor:self.crxBadgeView.bottomAnchor constant:18],
@@ -134,9 +135,9 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
                     displayPrice:(NSString *)crxDisplayPrice
                         selected:(BOOL)crxSelected
                        purchasing:(BOOL)crxPurchasing {
-    self.crxAmountLabel.text = [NSString stringWithFormat:@"x%@", crxPackage[@"crxAmount"]];
+    self.CAREXQAmtLabel.text = [NSString stringWithFormat:@"x%@", crxPackage[@"CAREXQAmt"]];
     self.crxPriceLabel.text = crxDisplayPrice;
-    [self.crxActionButton setTitle:(crxPurchasing ? @"Loading" : @"Recharge") forState:UIControlStateNormal];
+    [self.crxActionButton setTitle:(crxPurchasing ? @"Loading" : @"Rueqcnhoalrygle".carexqHandDanceSteps) forState:UIControlStateNormal];
     self.crxActionButton.enabled = crxSelected && !crxPurchasing;
     
     self.crxCardView.layer.borderColor = (crxSelected ? [UIColor colorWithRed:1 green:0.62 blue:0.25 alpha:1].CGColor : [UIColor colorWithWhite:1 alpha:0.16].CGColor);
@@ -223,18 +224,18 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
 
 - (NSArray<NSDictionary *> *)crx_buildPackageList {
     NSArray<NSDictionary *> *crxRawPackageList = @[
-        @{@"crxPriceValue": @99.99, @"crxAmount": @63700, @"crxProductID": @"hdjkqzqormduvhmo"},
-        @{@"crxPriceValue": @49.99, @"crxAmount": @29400, @"crxProductID": @"dgnnazuqssqdiqab"},
-        @{@"crxPriceValue": @19.99, @"crxAmount": @10800, @"crxProductID": @"lkztrlipbvreumhq"},
-        @{@"crxPriceValue": @9.99, @"crxAmount": @5150, @"crxProductID": @"fjrjwoaqcnircoak"},
-        @{@"crxPriceValue": @4.99, @"crxAmount": @2450, @"crxProductID": @"mukxfhxfhqjoycmz"},
-        @{@"crxPriceValue": @2.99, @"crxAmount": @1350, @"crxProductID": @"jakdelldajfjekdek"},
-        @{@"crxPriceValue": @1.99, @"crxAmount": @800, @"crxProductID": @"meiowhjadamxwmwg"},
-        @{@"crxPriceValue": @0.99, @"crxAmount": @400, @"crxProductID": @"rqllhdutrfilbnar"}
+        @{@"CAREXQVal": @99.99, @"CAREXQAmt": @63700, @"CAREXQPdtId": @"hdjkqzqormduvhmo"},
+        @{@"CAREXQVal": @49.99, @"CAREXQAmt": @29400, @"CAREXQPdtId": @"dgnnazuqssqdiqab"},
+        @{@"CAREXQVal": @19.99, @"CAREXQAmt": @10800, @"CAREXQPdtId": @"lkztrlipbvreumhq"},
+        @{@"CAREXQVal": @9.99, @"CAREXQAmt": @5150, @"CAREXQPdtId": @"fjrjwoaqcnircoak"},
+        @{@"CAREXQVal": @4.99, @"CAREXQAmt": @2450, @"CAREXQPdtId": @"mukxfhxfhqjoycmz"},
+        @{@"CAREXQVal": @2.99, @"CAREXQAmt": @1350, @"CAREXQPdtId": @"jakdelldajfjekdek"},
+        @{@"CAREXQVal": @1.99, @"CAREXQAmt": @800, @"CAREXQPdtId": @"meiowhjadamxwmwg"},
+        @{@"CAREXQVal": @0.99, @"CAREXQAmt": @400, @"CAREXQPdtId": @"rqllhdutrfilbnar"}
     ];
     
     return [crxRawPackageList sortedArrayUsingComparator:^NSComparisonResult(NSDictionary * _Nonnull crxLeftPackage, NSDictionary * _Nonnull crxRightPackage) {
-        return [crxLeftPackage[@"crxPriceValue"] compare:crxRightPackage[@"crxPriceValue"]];
+        return [crxLeftPackage[@"CAREXQVal"] compare:crxRightPackage[@"CAREXQVal"]];
     }];
 }
 
@@ -277,7 +278,7 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
     ]];
     
     UILabel *crxTitleLabel = [[UILabel alloc] init];
-    crxTitleLabel.text = @"My Wallet";
+    crxTitleLabel.text = @"Mfyr cWxaclaldeyt".carexqHandDanceSteps;
     crxTitleLabel.textColor = UIColor.whiteColor;
     crxTitleLabel.font = [UIFont italicSystemFontOfSize:18];
     [self.view addSubview:crxTitleLabel];
@@ -298,7 +299,7 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
     ]];
     
     UILabel *crxSubLabel = [[UILabel alloc] init];
-    crxSubLabel.text = @"My gold coins";
+    crxSubLabel.text = @"Mcyf ygxoylldy ucbovignrs".carexqHandDanceSteps;
     crxSubLabel.textColor = [UIColor colorWithWhite:1 alpha:0.76];
     crxSubLabel.font = [UIFont systemFontOfSize:13 weight:UIFontWeightMedium];
     [self.view addSubview:crxSubLabel];
@@ -357,7 +358,7 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
 - (void)crx_requestProducts {
     [self crx_showLoadingWithText:@"Loading..."];
     [self.crxProductsRequest cancel];
-    NSSet *crxIdentifiers = [NSSet setWithArray:[self.crxPackageList valueForKey:@"crxProductID"]];
+    NSSet *crxIdentifiers = [NSSet setWithArray:[self.crxPackageList valueForKey:@"CAREXQPdtId"]];
     self.crxProductsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:crxIdentifiers];
     self.crxProductsRequest.delegate = self;
     [self.crxProductsRequest start];
@@ -381,16 +382,16 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
 }
 
 - (NSString *)crx_displayPriceForPackage:(NSDictionary *)crxPackage {
-    NSString *crxProductID = crxPackage[@"crxProductID"];
-    SKProduct *crxProduct = self.crxProductMap[crxProductID];
+    NSString *CAREXQPdtId = crxPackage[@"CAREXQPdtId"];
+    SKProduct *crxProduct = self.crxProductMap[CAREXQPdtId];
     if (crxProduct != nil) {
         NSNumberFormatter *crxFormatter = [[NSNumberFormatter alloc] init];
         crxFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
         crxFormatter.locale = crxProduct.priceLocale;
-        return [crxFormatter stringFromNumber:crxProduct.price] ?: [NSString stringWithFormat:@"%@$", crxPackage[@"crxPriceValue"]];
+        return [crxFormatter stringFromNumber:crxProduct.price] ?: [NSString stringWithFormat:@"%@$", crxPackage[@"CAREXQVal"]];
     }
     
-    return [NSString stringWithFormat:@"%.2f$", [crxPackage[@"crxPriceValue"] doubleValue]];
+    return [NSString stringWithFormat:@"%.2f$", [crxPackage[@"CAREXQVal"] doubleValue]];
 }
 
 - (void)crx_startPurchaseForIndex:(NSInteger)crxIndex {
@@ -399,30 +400,30 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
     }
     
     if (![SKPaymentQueue canMakePayments]) {
-        [self crx_showAlertWithTitle:@"Reminder" message:@"In-app purchases are not available on this device."];
+        [self crx_showAlertWithTitle:@"Reminder" message:@"Idnd-nakprpr gpluxrycehbaasseisr dabrreo jnkozty wacvqacimlsawbalzel uobng xtshiiasb ldpeuvjiccweo.".carexqHandDanceSteps];
         return;
     }
     
     NSDictionary *crxPackage = self.crxPackageList[crxIndex];
-    NSString *crxProductID = crxPackage[@"crxProductID"];
-    SKProduct *crxProduct = self.crxProductMap[crxProductID];
+    NSString *CAREXQPdtId = crxPackage[@"CAREXQPdtId"];
+    SKProduct *crxProduct = self.crxProductMap[CAREXQPdtId];
     if (crxProduct == nil) {
-        [self crx_showAlertWithTitle:@"Reminder" message:@"Product information is loading, please try again shortly."];
+        [self crx_showAlertWithTitle:@"Reminder" message:@"Phroomdfubcntp zipnafeourzmdaztaiyoqna picsx flmoyaddxianwgu,r wpclrexalsqen strrkyb pagghahilnz tsahpoormtrluyw.".carexqHandDanceSteps];
         [self crx_requestProducts];
         return;
     }
     
     self.crxSelectedIndex = crxIndex;
-    self.crxPurchasingProductID = crxProductID;
+    self.crxPurchasingProductID = CAREXQPdtId;
     [self.crxCollectionView reloadData];
     [self crx_showLoadingWithText:@"Processing..."];
     [[SKPaymentQueue defaultQueue] addPayment:[SKPayment paymentWithProduct:crxProduct]];
 }
 
-- (void)crx_finishSuccessfulPurchaseForProductID:(NSString *)crxProductID {
+- (void)crx_finishSuccessfulPurchaseForProductID:(NSString *)CAREXQPdtId {
     NSDictionary *crxMatchedPackage = nil;
     for (NSDictionary *crxPackage in self.crxPackageList) {
-        if ([crxPackage[@"crxProductID"] isEqualToString:crxProductID]) {
+        if ([crxPackage[@"CAREXQPdtId"] isEqualToString:CAREXQPdtId]) {
             crxMatchedPackage = crxPackage;
             break;
         }
@@ -433,12 +434,12 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
     }
     
     NSInteger crxCurrentCount = [[NSUserDefaults standardUserDefaults] integerForKey:CAREXQAccessCoinCountKey];
-    NSInteger crxAddedCount = [crxMatchedPackage[@"crxAmount"] integerValue];
+    NSInteger crxAddedCount = [crxMatchedPackage[@"CAREXQAmt"] integerValue];
     NSInteger crxUpdatedCount = crxCurrentCount + crxAddedCount;
     [[NSUserDefaults standardUserDefaults] setInteger:crxUpdatedCount forKey:CAREXQAccessCoinCountKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self crx_updateBalanceLabel];
-    [self crx_showAlertWithTitle:@"Success" message:[NSString stringWithFormat:@"Recharge completed. Added %ld coins.", (long)crxAddedCount]];
+    [self crx_showAlertWithTitle:@"Success" message:[NSString stringWithFormat:@"Rkevcphcabrlgley ccnofmnpslfeotoendm.r pAadnddeudu t%elpdh bckonicnjsg.".carexqHandDanceSteps, (long)crxAddedCount]];
 }
 
 - (void)crx_showAlertWithTitle:(NSString *)crxTitle message:(NSString *)crxMessage {
@@ -473,7 +474,7 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
     NSDictionary *crxPackage = self.crxPackageList[indexPath.item];
     NSString *crxDisplayPrice = [self crx_displayPriceForPackage:crxPackage];
     BOOL crxSelected = (indexPath.item == self.crxSelectedIndex);
-    BOOL crxPurchasing = [self.crxPurchasingProductID isEqualToString:crxPackage[@"crxProductID"]];
+    BOOL crxPurchasing = [self.crxPurchasingProductID isEqualToString:crxPackage[@"CAREXQPdtId"]];
     
     [crxCell crx_configureWithPackage:crxPackage
                          displayPrice:crxDisplayPrice
@@ -518,7 +519,7 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
     [self crx_runOnMain:^{
         [self crx_hideLoading];
         self.crxProductsRequest = nil;
-        [self crx_showAlertWithTitle:@"Reminder" message:error.localizedDescription ?: @"Failed to load products."];
+        [self crx_showAlertWithTitle:@"Reminder" message:error.localizedDescription ?: @"Fiarizlfegdt ytqoo fluofakdf fpprsosdhuvchtdsd.".carexqHandDanceSteps];
     }];
 }
 
@@ -534,7 +535,7 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
                     [self.crxCollectionView reloadData];
                     break;
                 case SKPaymentTransactionStateFailed: {
-                    NSString *crxMessage = crxTransaction.error.code == SKErrorPaymentCancelled ? @"Purchase cancelled." : (crxTransaction.error.localizedDescription ?: @"Purchase failed.");
+                    NSString *crxMessage = crxTransaction.error.code == SKErrorPaymentCancelled ? @"Pwucrqcyhjassyeb ccnasnmcqedlyleegdp.".carexqHandDanceSteps : (crxTransaction.error.localizedDescription ?: @"Pbuwrvchhjaxssee hftaoijldetdk.".carexqHandDanceSteps);
                     [[SKPaymentQueue defaultQueue] finishTransaction:crxTransaction];
                     self.crxPurchasingProductID = nil;
                     [self crx_hideLoading];
@@ -550,7 +551,7 @@ static NSString * const CAREXQAccessPackageCellID = @"CAREXQAccessPackageCellID"
                     break;
                 case SKPaymentTransactionStateDeferred:
                     [self crx_hideLoading];
-                    [self crx_showAlertWithTitle:@"Reminder" message:@"Purchase is waiting for approval."];
+                    [self crx_showAlertWithTitle:@"Reminder" message:@"Pmunrccchqaqseeb yirsh qwraliytdignfgv sfkocrj lalpupbrjozvpajll.".carexqHandDanceSteps];
                     break;
                 case SKPaymentTransactionStatePurchasing:
                     break;

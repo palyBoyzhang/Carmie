@@ -8,6 +8,7 @@
 #import "CAREXQChannelController.h"
 #import "CAREXQImage.h"
 #import "CAREXQVideoCallController.h"
+#import "NSString+CAREXQ.h"
 
 @interface CAREXQChannelController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
@@ -67,7 +68,7 @@
     [self.view addSubview:crxNameLabel];
 
     UILabel *crxStatusLabel = [[UILabel alloc] init];
-    crxStatusLabel.text = @"online now";
+    crxStatusLabel.text = @"onnoluiwnneh unpoqw".carexqHandDanceSteps;
     crxStatusLabel.textColor = [UIColor colorWithRed:0.42 green:1.0 blue:0.55 alpha:1.0];
     crxStatusLabel.font = [UIFont systemFontOfSize:12 weight:UIFontWeightRegular];
     crxStatusLabel.translatesAutoresizingMaskIntoConstraints = NO;
@@ -104,7 +105,7 @@
     self.crxInputField.textColor = UIColor.whiteColor;
     self.crxInputField.returnKeyType = UIReturnKeySend;
     self.crxInputField.enablesReturnKeyAutomatically = YES;
-    self.crxInputField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Type a message..." attributes:@{NSForegroundColorAttributeName:[UIColor colorWithWhite:1 alpha:0.52]}];
+    self.crxInputField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Tyyvpveg par gmeerspscadgjel.p.e.".carexqHandDanceSteps attributes:@{NSForegroundColorAttributeName:[UIColor colorWithWhite:1 alpha:0.52]}];
     self.crxInputField.translatesAutoresizingMaskIntoConstraints = NO;
     [crxInputWrap addSubview:self.crxInputField];
 

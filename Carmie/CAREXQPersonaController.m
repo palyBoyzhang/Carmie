@@ -9,7 +9,7 @@
 #import "CAREXQImage.h"
 #import "CAREXQChannelController.h"
 #import "CAREXQVideoCallController.h"
-#import "CAREXQEntryController.h"
+#import "CAREXQEntryGateController.h"
 
 static NSString * const CAREXQPersonaFriendStatePrefix = @"crx.persona.friend.";
 
@@ -471,7 +471,7 @@ static NSString * const CAREXQPersonaFriendStatePrefix = @"crx.persona.friend.";
     if ([CAREXQController crx_isLoggedIn]) {
         return YES;
     }
-    CAREXQEntryController *crxEntryController = [[CAREXQEntryController alloc] init];
+    CAREXQEntryGateController *crxEntryController = [[CAREXQEntryGateController alloc] init];
     [self.navigationController pushViewController:crxEntryController animated:YES];
     return NO;
 }
@@ -484,26 +484,7 @@ static NSString * const CAREXQPersonaFriendStatePrefix = @"crx.persona.friend.";
     if (![self crx_requireLogin]) {
         return;
     }
-
-    NSDictionary *crxProfile = [self crx_profilePayload];
-    CAREXQVideoCallController *crxController = [[CAREXQVideoCallController alloc] init];
-    crxController.modalPresentationStyle = UIModalPresentationFullScreen;
-    crxController.crxMessageItem = @{
-        @"crxAvatar": crxProfile[@"crxAvatar"] ?: [CAREXQImage imageNamed:@"crx_head_1"] ?: UIImage.new,
-        @"crxName": self.crxUserItem[@"crxName"] ?: @"Hayden",
-        @"crxBackground": crxProfile[@"crxHero"] ?: [CAREXQImage imageNamed:@"crx_dy_1"] ?: UIImage.new
-    };
-    __weak typeof(self) weakSelf = self;
-    crxController.crxTimeoutHandler = ^{
-        __strong typeof(weakSelf) strongSelf = weakSelf;
-        if (!strongSelf) {
-            return;
-        }
-        UIAlertController *crxAlert = [UIAlertController alertControllerWithTitle:nil message:@"对方没有应答" preferredStyle:UIAlertControllerStyleAlert];
-        [crxAlert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
-        [strongSelf presentViewController:crxAlert animated:YES completion:nil];
-    };
-    [self presentViewController:crxController animated:YES completion:nil];
+    [self crx_showFeatureTipImage];
 }
 
 - (void)crx_friendTapped {
@@ -521,18 +502,7 @@ static NSString * const CAREXQPersonaFriendStatePrefix = @"crx.persona.friend.";
     if (![self crx_requireLogin]) {
         return;
     }
-    CAREXQChannelController *crxController = [[CAREXQChannelController alloc] init];
-    UIImage *crxAvatar = self.crxUserItem[@"crxImage"] ?: self.crxUserItem[@"crxAvatar"] ?: [CAREXQImage imageNamed:@"crx_head_1"] ?: UIImage.new;
-    NSString *crxName = self.crxUserItem[@"crxName"] ?: @"Hayden";
-    NSDictionary *crxProfile = [self crx_profilePayload];
-    crxController.crxMessageItem = @{
-        @"crxAvatar": crxAvatar,
-        @"crxName": crxName,
-        @"crxPreview": @"Hey, want to practice the next gesture dance together?",
-        @"crxTime": @"Now",
-        @"crxBackground": crxProfile[@"crxHero"] ?: [CAREXQImage imageNamed:@"crx_dy_1"] ?: UIImage.new
-    };
-    [self.navigationController pushViewController:crxController animated:YES];
+    [self crx_showFeatureTipImage];
 }
 
 - (void)crx_moreTapped {
@@ -541,6 +511,47 @@ static NSString * const CAREXQPersonaFriendStatePrefix = @"crx.persona.friend.";
     [self crx_presentModerationForUserName:crxName blockHandler:^{
         __strong typeof(weakSelf) strongSelf = weakSelf;
         [strongSelf.navigationController popViewControllerAnimated:YES];
+    }];
+}
+
+- (void)crx_showFeatureTipImage {
+    UIImage *crxTipImage = [UIImage imageNamed:@"CAREXQElue2"];
+    if (crxTipImage == nil) {
+        return;
+    }
+
+    UIView *crxMaskView = [[UIView alloc] initWithFrame:self.view.bounds];
+    crxMaskView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.46];
+    crxMaskView.alpha = 0.0;
+    crxMaskView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+
+    UIImageView *crxTipImageView = [[UIImageView alloc] initWithImage:crxTipImage];
+    crxTipImageView.contentMode = UIViewContentModeScaleAspectFit;
+    crxTipImageView.translatesAutoresizingMaskIntoConstraints = NO;
+    [crxMaskView addSubview:crxTipImageView];
+
+    [self.view addSubview:crxMaskView];
+    [NSLayoutConstraint activateConstraints:@[
+        [crxTipImageView.centerXAnchor constraintEqualToAnchor:crxMaskView.centerXAnchor],
+        [crxTipImageView.centerYAnchor constraintEqualToAnchor:crxMaskView.centerYAnchor],
+        [crxTipImageView.leadingAnchor constraintGreaterThanOrEqualToAnchor:crxMaskView.leadingAnchor constant:28],
+        [crxTipImageView.trailingAnchor constraintLessThanOrEqualToAnchor:crxMaskView.trailingAnchor constant:-28]
+    ]];
+
+    UITapGestureRecognizer *crxTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(crx_hideFeatureTipTap:)];
+    [crxMaskView addGestureRecognizer:crxTapGesture];
+
+    [UIView animateWithDuration:0.2 animations:^{
+        crxMaskView.alpha = 1.0;
+    }];
+}
+
+- (void)crx_hideFeatureTipTap:(UITapGestureRecognizer *)crxTapGesture {
+    UIView *crxMaskView = crxTapGesture.view;
+    [UIView animateWithDuration:0.2 animations:^{
+        crxMaskView.alpha = 0.0;
+    } completion:^(__unused BOOL finished) {
+        [crxMaskView removeFromSuperview];
     }];
 }
 

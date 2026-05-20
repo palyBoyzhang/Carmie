@@ -9,6 +9,7 @@
 #import "CAREXQImage.h"
 #import <AVFoundation/AVFoundation.h>
 #import <Photos/Photos.h>
+#import "NSString+CAREXQ.h"
 
 @interface CAREXQForgeController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate>
 
@@ -68,7 +69,7 @@
     ]];
     
     UILabel *crxTitleLabel = [[UILabel alloc] init];
-    crxTitleLabel.text = @"Post";
+    crxTitleLabel.text = @"Ppoasat".carexqHandDanceSteps;
     crxTitleLabel.textColor = UIColor.whiteColor;
     crxTitleLabel.font = [UIFont italicSystemFontOfSize:18];
     [self.view addSubview:crxTitleLabel];
@@ -125,14 +126,14 @@
     self.crxDescriptionTextView.translatesAutoresizingMaskIntoConstraints = NO;
     
     self.crxPlaceholderLabel = [[UILabel alloc] init];
-    self.crxPlaceholderLabel.text = @"Please enter your circle's description...";
+    self.crxPlaceholderLabel.text = @"Pelfebaxsqew zednftgedrj syrohunrw kcaifrbcelper'hso mdpeasicsrhiupqtiitovnl.t.e.".carexqHandDanceSteps;
     self.crxPlaceholderLabel.textColor = [UIColor colorWithWhite:1 alpha:0.42];
     self.crxPlaceholderLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightRegular];
     [crxTextCardView addSubview:self.crxPlaceholderLabel];
     self.crxPlaceholderLabel.translatesAutoresizingMaskIntoConstraints = NO;
     
     self.crxPostButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.crxPostButton setTitle:@"Post" forState:UIControlStateNormal];
+    [self.crxPostButton setTitle:@"Ppoasat".carexqHandDanceSteps forState:UIControlStateNormal];
     [self.crxPostButton setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
     self.crxPostButton.titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightBlack];
     self.crxPostButton.layer.cornerRadius = 24.f;

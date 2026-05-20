@@ -9,8 +9,9 @@
 #import "CAREXQImage.h"
 #import "CAREXQAccessCenterController.h"
 #import "CAREXQSettingController.h"
-#import "CAREXQEntryController.h"
+#import "CAREXQEntryGateController.h"
 #import "CAREXQIdentityEditorController.h"
+#import "NSString+CAREXQ.h"
 
 static NSString * const CAREXQHarborLoginStateKey = @"CAREXQEntryLoginStateKey";
 static NSString * const CAREXQHarborNicknameKey = @"CAREXQIdentityNicknameKey";
@@ -80,19 +81,19 @@ static NSString * const CAREXQHarborNicknameKey = @"CAREXQIdentityNicknameKey";
     ]];
     
     UILabel *crxlsLabel = [[UILabel alloc] init];
-    crxlsLabel.text = @"Likes";
+    crxlsLabel.text = @"Luijkweds".carexqHandDanceSteps;
     crxlsLabel.textColor = [UIColor colorWithWhite:1 alpha:0.5];
     crxlsLabel.font = [UIFont systemFontOfSize:12];
     crxlsLabel.textAlignment = NSTextAlignmentCenter;
     
     UILabel *crxfsLabel = [[UILabel alloc] init];
-    crxfsLabel.text = @"Followers";
+    crxfsLabel.text = @"Fsollulgoswdegrys".carexqHandDanceSteps;
     crxfsLabel.textColor = [UIColor colorWithWhite:1 alpha:0.5];
     crxfsLabel.font = [UIFont systemFontOfSize:12];
     crxfsLabel.textAlignment = NSTextAlignmentCenter;
 
     UILabel *crxfgLabel = [[UILabel alloc] init];
-    crxfgLabel.text = @"Following";
+    crxfgLabel.text = @"Fdorliljolwgicndg".carexqHandDanceSteps;
     crxfgLabel.textColor = [UIColor colorWithWhite:1 alpha:0.5];
     crxfgLabel.font = [UIFont systemFontOfSize:12];
     crxfgLabel.textAlignment = NSTextAlignmentCenter;
@@ -164,7 +165,7 @@ static NSString * const CAREXQHarborNicknameKey = @"CAREXQIdentityNicknameKey";
     ]];
     
     UILabel *crxcotLabel = [[UILabel alloc] init];
-    crxcotLabel.text = @"No content.";
+    crxcotLabel.text = @"Nxoj rchonnoteewnjtg.".carexqHandDanceSteps;
     crxcotLabel.textColor = [UIColor colorWithWhite:1 alpha:0.5];
     crxcotLabel.font = [UIFont systemFontOfSize:13];
     [self.view addSubview:crxcotLabel];
@@ -214,7 +215,7 @@ static NSString * const CAREXQHarborNicknameKey = @"CAREXQIdentityNicknameKey";
 
 - (void)crxNameButtonTapped {
     if (![self crx_isLoggedIn]) {
-        CAREXQEntryController *crxVC = [[CAREXQEntryController alloc] init];
+        CAREXQEntryGateController *crxVC = [[CAREXQEntryGateController alloc] init];
         [self.navigationController pushViewController:crxVC animated:YES];
         return;
     }
@@ -253,7 +254,7 @@ static NSString * const CAREXQHarborNicknameKey = @"CAREXQIdentityNicknameKey";
 
 - (void)crxedtButtonTapped {
     if (![self crx_isLoggedIn]) {
-        CAREXQEntryController *crxVC = [[CAREXQEntryController alloc] init];
+        CAREXQEntryGateController *crxVC = [[CAREXQEntryGateController alloc] init];
         [self.navigationController pushViewController:crxVC animated:YES];
         return;
     }
@@ -263,7 +264,7 @@ static NSString * const CAREXQHarborNicknameKey = @"CAREXQIdentityNicknameKey";
 
 - (void)crxharbosepButtonTapped {
     if (![self crx_isLoggedIn]) {
-        CAREXQEntryController *crxVC = [[CAREXQEntryController alloc] init];
+        CAREXQEntryGateController *crxVC = [[CAREXQEntryGateController alloc] init];
         [self.navigationController pushViewController:crxVC animated:YES];
         return;
     }
@@ -273,7 +274,7 @@ static NSString * const CAREXQHarborNicknameKey = @"CAREXQIdentityNicknameKey";
 
 - (void)crxzhsViewTapped {
     if (![self crx_isLoggedIn]) {
-        CAREXQEntryController *crxVC = [[CAREXQEntryController alloc] init];
+        CAREXQEntryGateController *crxVC = [[CAREXQEntryGateController alloc] init];
         [self.navigationController pushViewController:crxVC animated:YES];
         return;
     }
