@@ -11,6 +11,7 @@
 #import "CAREXQStageCell.h"
 #import <AVFoundation/AVFoundation.h>
 #import "CAREXQBlueprintController.h"
+#import "CAREXQRouteManager.h"
 
 @interface CAREXQStageController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -59,6 +60,7 @@
         [self.tableView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
         [self.tableView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor]
     ]];
+    [CAREXQSignalOrbit CAREXQturnOn:self];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

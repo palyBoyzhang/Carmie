@@ -225,16 +225,26 @@
 - (void)crx_setupViews {
     self.view.backgroundColor = [UIColor colorWithRed:0x05/255.0 green:0x08/255.0 blue:0x24/255.0 alpha:1.0];
 
+    UIScrollView *crxPageScrollView = [[UIScrollView alloc] init];
+    crxPageScrollView.showsVerticalScrollIndicator = NO;
+    crxPageScrollView.alwaysBounceVertical = YES;
+    crxPageScrollView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:crxPageScrollView];
+
+    UIView *crxPageContentView = [[UIView alloc] init];
+    crxPageContentView.translatesAutoresizingMaskIntoConstraints = NO;
+    [crxPageScrollView addSubview:crxPageContentView];
+
     self.crxPosterView = [[UIImageView alloc] initWithImage:self.crxStageItem[@"crxCoverImage"]];
     self.crxPosterView.contentMode = UIViewContentModeScaleAspectFill;
     self.crxPosterView.clipsToBounds = YES;
     self.crxPosterView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:self.crxPosterView];
+    [crxPageContentView addSubview:self.crxPosterView];
 
     UIView *crxPosterShade = [[UIView alloc] init];
     crxPosterShade.backgroundColor = [UIColor colorWithWhite:0 alpha:0.12];
     crxPosterShade.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:crxPosterShade];
+    [crxPageContentView addSubview:crxPosterShade];
 
     UIButton *crxBackButton = [self crx_buildTopButtonWithSystemImage:@"chevron.left"];
     [crxBackButton addTarget:self action:@selector(crx_backTapped) forControlEvents:UIControlEventTouchUpInside];
@@ -252,7 +262,7 @@
     crxPlayButton.tintColor = UIColor.whiteColor;
     [crxPlayButton addTarget:self action:@selector(crx_openPlayer) forControlEvents:UIControlEventTouchUpInside];
     crxPlayButton.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:crxPlayButton];
+    [crxPageContentView addSubview:crxPlayButton];
 
     self.crxInfoCardView = [[UIView alloc] init];
     self.crxInfoCardView.backgroundColor = [UIColor colorWithRed:0x1A/255.0 green:0x0B/255.0 blue:0x33/255.0 alpha:0.96];
@@ -260,7 +270,7 @@
     self.crxInfoCardView.layer.borderWidth = 1.0;
     self.crxInfoCardView.layer.borderColor = [UIColor colorWithWhite:1 alpha:0.12].CGColor;
     self.crxInfoCardView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:self.crxInfoCardView];
+    [crxPageContentView addSubview:self.crxInfoCardView];
 
     self.crxTitleLabel = [[UILabel alloc] init];
     self.crxTitleLabel.text = self.crxStageItem[@"crxHeadline"] ?: @"Gesture Dance Title";
@@ -331,12 +341,12 @@
     crxParticipantTitle.font = [UIFont italicSystemFontOfSize:15];
     crxParticipantTitle.textColor = UIColor.whiteColor;
     crxParticipantTitle.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:crxParticipantTitle];
+    [crxPageContentView addSubview:crxParticipantTitle];
 
     self.crxParticipantScrollView = [[UIScrollView alloc] init];
     self.crxParticipantScrollView.showsHorizontalScrollIndicator = NO;
     self.crxParticipantScrollView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:self.crxParticipantScrollView];
+    [crxPageContentView addSubview:self.crxParticipantScrollView];
 
     UIView *crxCardContentView = [[UIView alloc] init];
     crxCardContentView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -385,9 +395,20 @@
     }
 
     [NSLayoutConstraint activateConstraints:@[
-        [self.crxPosterView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
-        [self.crxPosterView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
-        [self.crxPosterView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
+        [crxPageScrollView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
+        [crxPageScrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
+        [crxPageScrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
+        [crxPageScrollView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor],
+
+        [crxPageContentView.topAnchor constraintEqualToAnchor:crxPageScrollView.contentLayoutGuide.topAnchor],
+        [crxPageContentView.leadingAnchor constraintEqualToAnchor:crxPageScrollView.contentLayoutGuide.leadingAnchor],
+        [crxPageContentView.trailingAnchor constraintEqualToAnchor:crxPageScrollView.contentLayoutGuide.trailingAnchor],
+        [crxPageContentView.bottomAnchor constraintEqualToAnchor:crxPageScrollView.contentLayoutGuide.bottomAnchor],
+        [crxPageContentView.widthAnchor constraintEqualToAnchor:crxPageScrollView.frameLayoutGuide.widthAnchor],
+
+        [self.crxPosterView.topAnchor constraintEqualToAnchor:crxPageContentView.topAnchor],
+        [self.crxPosterView.leadingAnchor constraintEqualToAnchor:crxPageContentView.leadingAnchor],
+        [self.crxPosterView.trailingAnchor constraintEqualToAnchor:crxPageContentView.trailingAnchor],
         [self.crxPosterView.heightAnchor constraintEqualToConstant:310],
 
         [crxPosterShade.topAnchor constraintEqualToAnchor:self.crxPosterView.topAnchor],
@@ -411,8 +432,8 @@
         [crxPlayButton.heightAnchor constraintEqualToConstant:68],
 
         [self.crxInfoCardView.topAnchor constraintEqualToAnchor:self.crxPosterView.bottomAnchor constant:-30],
-        [self.crxInfoCardView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:16],
-        [self.crxInfoCardView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:-16],
+        [self.crxInfoCardView.leadingAnchor constraintEqualToAnchor:crxPageContentView.leadingAnchor constant:16],
+        [self.crxInfoCardView.trailingAnchor constraintEqualToAnchor:crxPageContentView.trailingAnchor constant:-16],
 
         [self.crxTitleLabel.topAnchor constraintEqualToAnchor:self.crxInfoCardView.topAnchor constant:18],
         [self.crxTitleLabel.leadingAnchor constraintEqualToAnchor:self.crxInfoCardView.leadingAnchor constant:16],
@@ -454,12 +475,13 @@
         [self.crxInfoCardView.bottomAnchor constraintEqualToAnchor:crxDescBox.bottomAnchor constant:14],
 
         [crxParticipantTitle.topAnchor constraintEqualToAnchor:self.crxInfoCardView.bottomAnchor constant:14],
-        [crxParticipantTitle.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:16],
+        [crxParticipantTitle.leadingAnchor constraintEqualToAnchor:crxPageContentView.leadingAnchor constant:16],
 
         [self.crxParticipantScrollView.topAnchor constraintEqualToAnchor:crxParticipantTitle.bottomAnchor constant:10],
-        [self.crxParticipantScrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:16],
-        [self.crxParticipantScrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
+        [self.crxParticipantScrollView.leadingAnchor constraintEqualToAnchor:crxPageContentView.leadingAnchor constant:16],
+        [self.crxParticipantScrollView.trailingAnchor constraintEqualToAnchor:crxPageContentView.trailingAnchor],
         [self.crxParticipantScrollView.heightAnchor constraintEqualToConstant:156],
+        [self.crxParticipantScrollView.bottomAnchor constraintEqualToAnchor:crxPageContentView.bottomAnchor constant:-92],
 
         [crxCardContentView.topAnchor constraintEqualToAnchor:self.crxParticipantScrollView.contentLayoutGuide.topAnchor],
         [crxCardContentView.leadingAnchor constraintEqualToAnchor:self.crxParticipantScrollView.contentLayoutGuide.leadingAnchor],

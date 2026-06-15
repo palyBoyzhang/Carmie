@@ -45,7 +45,14 @@
         NSString *crxMarkerPath = [crxDestinationPath stringByAppendingPathComponent:@".carexq_unzip_done"];
         NSFileManager *crxFileManager = NSFileManager.defaultManager;
 
-        if ([crxFileManager fileExistsAtPath:crxMarkerPath]) {
+        NSDictionary<NSFileAttributeKey, id> *crxZipAttributes = [crxFileManager attributesOfItemAtPath:crxZipPath error:nil];
+        NSString *crxZipVersion = [NSString stringWithFormat:@"%@|%@",
+                                   crxZipAttributes[NSFileSize] ?: @0,
+                                   crxZipAttributes[NSFileModificationDate] ?: @""];
+        NSString *crxPreparedVersion = [NSString stringWithContentsOfFile:crxMarkerPath
+                                                                  encoding:NSUTF8StringEncoding
+                                                                     error:nil];
+        if (crxPreparedVersion.length > 0 && [crxPreparedVersion isEqualToString:crxZipVersion]) {
             return;
         }
 
@@ -68,7 +75,7 @@
             return;
         }
 
-        [@"ok" writeToFile:crxMarkerPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+        [crxZipVersion writeToFile:crxMarkerPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
     });
 }
 
@@ -85,7 +92,9 @@
     NSArray<NSString *> *crxExtensions = crxExtension.length > 0 ? @[crxExtension] : @[@"png", @"jpg", @"jpeg", @"webp", @"gif", @"heic"];
     NSArray<NSString *> *crxDirectories = @[
         [[self crx_extractedRootPath] stringByAppendingPathComponent:@"CoreImage"],
-        [[self crx_extractedRootPath] stringByAppendingPathComponent:@"CarmieRes"]
+        [[self crx_extractedRootPath] stringByAppendingPathComponent:@"CarmieRes"],
+        [[[self crx_extractedRootPath] stringByAppendingPathComponent:@"CAREXQImage"] stringByAppendingPathComponent:@"CoreImage"],
+        [[[self crx_extractedRootPath] stringByAppendingPathComponent:@"CAREXQImage"] stringByAppendingPathComponent:@"CarmieRes"]
     ];
 
     NSMutableArray<NSString *> *crxCandidateNames = [NSMutableArray array];

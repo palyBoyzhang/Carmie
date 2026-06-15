@@ -1,20 +1,43 @@
 PODS:
+  - Adjust (5.6.2):
+    - Adjust/Adjust (= 5.6.2)
+  - Adjust/Adjust (5.6.2):
+    - AdjustSignature (= 3.67.0)
+  - AdjustSignature (3.67.0)
+  - FBAEMKit (17.4.0):
+    - FBSDKCoreKit_Basics (= 17.4.0)
+  - FBSDKCoreKit (17.4.0):
+    - FBAEMKit (= 17.4.0)
+    - FBSDKCoreKit_Basics (= 17.4.0)
+  - FBSDKCoreKit_Basics (17.4.0)
   - IQKeyboardManager (6.5.19)
   - SSZipArchive (2.4.3)
 
 DEPENDENCIES:
+  - Adjust (~> 5.0)
+  - FBSDKCoreKit (~> 17.0)
   - IQKeyboardManager
   - SSZipArchive
 
 SPEC REPOS:
   trunk:
+    - Adjust
+    - AdjustSignature
+    - FBAEMKit
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
     - IQKeyboardManager
     - SSZipArchive
 
 SPEC CHECKSUMS:
+  Adjust: 62ea53a252534df416676e7ac2f1558d60e6e39e
+  AdjustSignature: 9498705a4ac67b719e31828be4d74fbb8656950c
+  FBAEMKit: 58cb5f302cdd715a56d4c1d0dfdd2e423ac1421a
+  FBSDKCoreKit: 94d7461d0cecf441b1ba7c41acfff41daa8ccd41
+  FBSDKCoreKit_Basics: 151b43db8b834d3f0e02f95d36a44ffd36265e45
   IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: 63ea176f8962d09cecc541eea4b47cd931fabe3b
+PODFILE CHECKSUM: d0f8715af20e0caa6593015f534b83bac39d8411
 
 COCOAPODS: 1.16.2
