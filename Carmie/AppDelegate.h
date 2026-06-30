@@ -9,6 +9,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+- (void)CAREXQinitPushCenterWithApplication;
 
 @end
 

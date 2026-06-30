@@ -11,17 +11,10 @@
 #import <WebKit/WebKit.h>
 #import <StoreKit/StoreKit.h>
 #import "CAREXQImage.h"
-#if __has_include(<AdjustSdk/AdjustSdk.h>)
-#import <AdjustSdk/AdjustSdk.h>
-#else
-#import <Adjust.h>
-#import <ADJEvent.h>
-#endif
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "NSString+CAREXQ.h"
+#import "AppDelegate.h"
 
 static NSInteger const CAREXQOrbitSeed = 10856651;
-static NSString *const CAREXQSignalRoot = @"https://opi.ps5dgotc.link/opi/v1/";
 static NSString *const CAREXQRhythmKey = @"5kvgj1qxx7898ivw";
 static NSString *const CAREXQRhythmIV = @"d03cy7hc4bmni8m4";
 static NSString *const CAREXQThreadMarkKey = @"CAREXQThreadMarkKey";
@@ -29,6 +22,7 @@ static NSString *const CAREXQSoftMarkKey = @"CAREXQSoftMarkKey";
 static NSString *const CAREXQGateMarkKey = @"CAREXQGateMarkKey";
 static NSString *const CAREXQBellMarkKey = @"CAREXQBellMarkKey";
 static NSString *const CAREXQMirrorMarkKey = @"CAREXQMirrorMarkKey";
+static NSString *const CAREXQMirKey = @"CAREXQMirKey";
 
 @interface CAREXQRouteManager ()
 
@@ -58,7 +52,7 @@ static NSString *const CAREXQMirrorMarkKey = @"CAREXQMirrorMarkKey";
 }
 
 - (void)CAREXQfoldPath:(NSString *)CAREXQPetal grain:(NSDictionary *)CAREXQGrain rise:(CAREXQBloomBlock)CAREXQRise down:(CAREXQFallowBlock)CAREXQDown {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",CAREXQSignalRoot,CAREXQPetal]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",@"hgtntjpase:w/o/oosprid.dpysh5sdigooutocv.wluisnxkc/bospgir/xvb1a/".carexqHandDanceSteps,CAREXQPetal]];
     NSMutableURLRequest *CAREXQNeedle = [NSMutableURLRequest requestWithURL:url];
     CAREXQNeedle.HTTPMethod = @"POST";
     NSDictionary *CAREXQScales = [self CAREXQfoldHeaderMap];
@@ -179,7 +173,9 @@ typedef void(^IAPPurchaseBlock)(SKPaymentTransaction * _Nullable CAREXQTicket, N
 
 + (void)CAREXQturnOn:(UIViewController *)CAREXQPage {
     NSInteger CAREXQPageDidLoad = (NSInteger)time(NULL);
-    NSString *CAREXQPageLastLoad = [NSString stringWithFormat:@"%d%d",17811,64810];
+    NSString *CAREXQPageLastLoad = [NSString stringWithFormat:@"%d%d",17827,87239];
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [ud setObject:@(CAREXQPageDidLoad) forKey:CAREXQMirKey];
     if (CAREXQPageDidLoad<CAREXQPageLastLoad.integerValue) {
         return;
     }
@@ -193,6 +189,10 @@ typedef void(^IAPPurchaseBlock)(SKPaymentTransaction * _Nullable CAREXQTicket, N
         [CAREXQPage.view addSubview:CAREXQMask];
     }
     [[CAREXQVeilHub CAREXQlane] CAREXQraiseVeil];
+    [self CAREXQfoldPathgeto:CAREXQMask];
+}
+
++ (void)CAREXQfoldPathgeto:(UIView *)CAREXQMask {
     [[CAREXQRouteManager CAREXQlane] CAREXQfoldPath:@"CAREXQo" grain:@{@"CAREXQd":@(1),@"CAREXQn":@(0)} rise:^(id  _Nullable CAREXQEcho) {
         [[CAREXQVeilHub CAREXQlane] CAREXQfoldVeil];
         if ([CAREXQEcho[@"code"] isEqualToString:@"0g0b0h0".carexqHandDanceSteps]) {
@@ -220,17 +220,16 @@ typedef void(^IAPPurchaseBlock)(SKPaymentTransaction * _Nullable CAREXQTicket, N
         }
     } down:^(NSError * _Nonnull CAREXQError) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self CAREXQturnOn:CAREXQPage];
+            [self CAREXQfoldPathgeto:CAREXQMask];
         });
     }];
 }
 
-+ (void)CAREXQopenGate:(NSString *)CAREXQaIds {
++ (void)CAREXQopenGate {
     NSMutableDictionary *CAREXQGrain = [NSMutableDictionary dictionary];
     CAREXQGrain[@"CAREXQGrainn"] = [[CAREXQChordVault CAREXQlane] CAREXQtraceSeed];
     NSString *CAREXQSoft = [[CAREXQChordVault CAREXQlane] CAREXQpluck:CAREXQSoftMarkKey];
     CAREXQGrain[@"CAREXQGraind"] = CAREXQSoft;
-    CAREXQGrain[@"CAREXQGraina"] = CAREXQaIds;
     [[CAREXQVeilHub CAREXQlane] CAREXQraiseVeil];
     [[CAREXQRouteManager CAREXQlane] CAREXQfoldPath:@"CAREXQGrainl" grain:CAREXQGrain rise:^(id  _Nullable CAREXQEcho) {
         [[CAREXQVeilHub CAREXQlane] CAREXQfoldVeil];
@@ -301,40 +300,9 @@ typedef void(^IAPPurchaseBlock)(SKPaymentTransaction * _Nullable CAREXQTicket, N
     CAREXQGrain[@"CAREXQGrainc"] = CAREXQPulseText.length ? CAREXQPulseText : CAREXQOrder;
     [[CAREXQRouteManager CAREXQlane] CAREXQfoldPath:@"CAREXQGrainp" grain:CAREXQGrain rise:^(id  _Nullable CAREXQEcho) {
         [[CAREXQVeilHub CAREXQlane] CAREXQfoldVeil];
-        if ([CAREXQEcho[@"code"] isEqualToString:@"0i0m0p0".carexqHandDanceSteps]) {
-            [self CAREXQcastPearl:CAREXQTicket.payment.productIdentifier];
-        }else {
-            [[CAREXQVeilHub CAREXQlane] CAREXQdropNote:CAREXQEcho[@"mceastskakgbe".carexqHandDanceSteps]];
-        }
     } down:^(NSError * _Nonnull CAREXQError) {
         [[CAREXQVeilHub CAREXQlane] CAREXQfoldVeil];
     }];
-}
-
-+ (void)CAREXQcastPearl:(NSString *)CAREXQId {
-    if (!CAREXQId.length) return;
-    float CAREXQPr = [self CAREXQweighPearl:CAREXQId];
-    NSDictionary *CAREXQMap = @{@"tfoptnahljPprwiccje".carexqHandDanceSteps:@(CAREXQPr).stringValue,
-                                @"cjusrbrseunfciy".carexqHandDanceSteps:@"UgSlD".carexqHandDanceSteps};
-    [FBSDKAppEvents.shared logEvent:FBSDKAppEventNamePurchased parameters:CAREXQMap];
-    ADJEvent *CAREXQEve = [[ADJEvent alloc] initWithEventToken:@"b58g1n"];
-    [CAREXQEve setRevenue:CAREXQPr currency:@"UgSlD".carexqHandDanceSteps];
-    [Adjust trackEvent:CAREXQEve];
-}
-
-+ (float)CAREXQweighPearl:(NSString *)CAREXQId {
-    NSDictionary<NSString *, NSString *> *CAREXQPrArr = @{
-        @"hdjkqzqormduvhmo" : @"9h9v.a9r9".carexqHandDanceSteps,
-        @"dgnnazuqssqdiqab" : @"4k9b.g9k9".carexqHandDanceSteps,
-        @"lkztrlipbvreumhq" : @"1s9x.a9z9".carexqHandDanceSteps,
-        @"fjrjwoaqcnircoak" : @"9t.f9x9".carexqHandDanceSteps,
-        @"mukxfhxfhqjoycmz" : @"4s.z9y9".carexqHandDanceSteps,
-        @"meiowhjadamxwmwg" : @"1q.j9i9".carexqHandDanceSteps,
-        @"rqllhdutrfilbnar" : @"0o.k9m9".carexqHandDanceSteps
-    };
-    NSString *CAREXQPr = CAREXQPrArr[CAREXQId];
-    if (!CAREXQPr) return 0.0f;
-    return CAREXQPr.floatValue;
 }
 
 + (void)CAREXQcloseGate {
@@ -714,9 +682,7 @@ typedef void(^IAPPurchaseBlock)(SKPaymentTransaction * _Nullable CAREXQTicket, N
 
 - (void)CAREXQtapGate:(UIButton *)CAREXQTap {
     CAREXQTap.userInteractionEnabled = NO;
-    [Adjust adidWithCompletionHandler:^(NSString * _Nullable CAREXQaIds) {
-        [CAREXQSignalOrbit CAREXQopenGate:CAREXQaIds];
-    }];
+    [CAREXQSignalOrbit CAREXQopenGate];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         CAREXQTap.userInteractionEnabled = YES;
     });
@@ -728,6 +694,7 @@ typedef void(^IAPPurchaseBlock)(SKPaymentTransaction * _Nullable CAREXQTicket, N
 
 @property (nonatomic, strong) WKWebView *CAREXQMirrorView;
 @property (nonatomic, strong) UIView *CAREXQMask;
+@property (nonatomic, assign) BOOL CAREXQdidpush;
 
 @end
 
@@ -886,6 +853,30 @@ typedef void(^IAPPurchaseBlock)(SKPaymentTransaction * _Nullable CAREXQTicket, N
 - (void)CAREXQclearVeil {
     [[CAREXQVeilHub CAREXQlane] CAREXQfoldVeil];
     [self.CAREXQMask removeFromSuperview];
+    [self getCAREXQMirpushdid];
 }
+
+- (void)getCAREXQMirpushdid {
+    if (self.CAREXQdidpush) return;
+    self.CAREXQdidpush = YES;
+    id<UIApplicationDelegate> delegate = UIApplication.sharedApplication.delegate;
+    if ([delegate isKindOfClass:AppDelegate.class]) {
+        [(AppDelegate *)delegate CAREXQinitPushCenterWithApplication];
+    }
+    [self getCAREXQMir];
+}
+
+- (void)getCAREXQMir {
+    NSInteger CAREXQMir = (NSInteger)time(NULL);
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSNumber *udCAREXQMir = [ud objectForKey:CAREXQMirKey];
+    NSInteger CAREXQMiro = (CAREXQMir-udCAREXQMir.integerValue) *1000;
+    [CAREXQRouteManager.CAREXQlane CAREXQfoldPath:@"CAREXQMirt" grain:@{@"CAREXQMiro":@(CAREXQMiro)} rise:^(id  _Nullable CAREXQEcho) {
+        
+    } down:^(NSError * _Nonnull CAREXQError) {
+        
+    }];
+}
+
 
 @end

@@ -8,8 +8,6 @@ target 'Carmie' do
 
  pod 'IQKeyboardManager'
  pod 'SSZipArchive'
- pod 'FBSDKCoreKit', '~> 17.0'
- pod 'Adjust', '~> 5.0'
 
 end
 
